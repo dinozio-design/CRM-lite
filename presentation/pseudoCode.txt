@@ -1,0 +1,68 @@
+Main Page
+ALL PROMPTS/ALERTS/CONFIRMS are Modal
+on page load ->
+	- 
+ user sees:
+	- show me appointments BTN
+	- add new appintments BTN
+----
+
+WHEN show me appointments BTN click ()
+	check local storage for data
+	if there is any data in local storage then
+	render data on page
+
+WHEN add new appintments BTN click ()
+	href link to new html page with title "ADD APPOINTMENT INFO"
+	this page includes for elements for user input
+	user MUST input: + date + time slot + postal code
+
+	WHEN SAVE BTN is clicked ()
+		verify user input()
+		save user input into local storage()
+		return to MAIN page
+
+	WHEN CANCEL BTN is clicked ()
+		modal (confirm user action)
+		ignore user input
+		return to main page
+---
+
+WHEN APPINTMENT list item in display is clicked
+	THEN it clears the display area (container)
+	and render specific apointment detail
+	render additional 3rd party server-side API info
+WHEN NEXT BTN is clicked()
+	render next item from local storage
+	HTML elements remain the same
+	but the data will change
+WHEN PREV. BTN is clicked ()
+	render previous item from local storage
+	HTML elements remain the same
+	but the data will change
+IF no [NEXT ITEM]
+	THEN hide NEXT BTN
+IF no [PREV. ITEM] 
+	THEN hide (inactive) PREV. BTN
+
+---
+FUNCTIONS:
+	verifyUserInput()
+		check date and time slot in local storage
+			if exist {then prompt(MODAL) user that time is booked
+			and pick another time slot
+		check postal code and prompt user if no postal code is entered
+		check all other input elements not empty
+
+	getGeoLocate(postal-code)
+		API CALL and fetch lat and lon
+	getWeather(lat, lon)
+		API CALL and fetch TODAYS FORECAST
+---
+
+		
+		
+	
+
+	
+	
