@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    background-color: a;
+    padding: 0;
+}
+
+
+header,
+footer {
+    height: 100px;
+    width: 100%;
+    line-height: 70px;
+    background-color: #266150;
+}
+
+header {
+    border-bottom: beige solid 70px;
+}
+
+footer {
+    position: absolute;
+bottom: 0%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container1 {
+    height: 200px;
+     display: flex;
+     flex-direction: column;
+     margin-top:50px ;
+     justify-content: space-between;
+}
+
+.Header {
+    font-size: 50px;
+    color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-section, .right-section {
+    border: 4px solid #266150;
+}
+
+.left-section {
+    height: 65vh;
+    width: 25vh;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.right-section {
+    height: 65vh;
+    width:75vh ;
+    padding: 10px;
+    margin-right: 10%;
+    
+}
+
+.appointment1:hover {
+    background-color: burlywood;
+    color: aliceblue;
+}
+
+
+.appointment2:hover {
+background-color: burlywood;
+color: aliceblue;
+}
+
+.appointment1 {
+    height: 40px;
+    padding:10px 20px;
+    border-style: unset;
+    margin-bottom: 10px;
+    background-color: gainsboro;
+    border: solid silver;
+}
+
+
+.appointment2 {
+    height: 40px;
+    padding: 5%;
+    border-style: unset;
+    background-color: gainsboro;
+    border: solid silver;
+}
+
+#space {
+    height: 20px;;
+}
