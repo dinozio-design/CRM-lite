@@ -22,7 +22,7 @@ footer {
 bottom: 0%;
 }
 
-.container {
+.containerM {
     display: flex;
     justify-content: center;
 }
@@ -61,7 +61,7 @@ bottom: 0%;
     
 }
 
-.appointment1:hover {
+/* .appointment1:hover {
     background-color: burlywood;
     color: aliceblue;
 }
@@ -88,7 +88,7 @@ color: aliceblue;
     border-style: unset;
     background-color: gainsboro;
     border: solid silver;
-}
+} */
 
 .userInput {
     height: 600px;
