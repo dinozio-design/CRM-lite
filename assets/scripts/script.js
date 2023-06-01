@@ -24,14 +24,14 @@ var APIkey = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + 
 
       if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
 
-        var titleFive = $("<h3>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-        var imgFive = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
+        var title = $("<h3>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
+        var weatherIconlogo = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
         var colFive = $("<div>").addClass("col-md-2.5");
         var cardFive = $("<div>").addClass("card bg-primary text-white");
         var cardBodyFive = $("<div>").addClass("card-body p-2");
-        var humidFive = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
-        var tempFive = $("<p>").addClass("card-text").text("Temperature: " + data.list[i].main.temp + " °F");
-        var windFive = $("<p>").addClass("card-text").text("Wind: " + data.list[i].wind.speed + " MPH");
+        var viewHumidityvalue = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
+        var viewTempvalue = $("<p>").addClass("card-text").text("Temperature: " + data.list[i].main.temp + " °F");
+        var viewWindvalue = $("<p>").addClass("card-text").text("Wind: " + data.list[i].wind.speed + " MPH");
 
         //merge together and put on page
         colFive.append(cardFive.append(cardBodyFive.append(titleFive, imgFive, tempFive, humidFive,windFive)));
