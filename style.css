@@ -36,9 +36,7 @@ bottom: 0%;
 }
 
 .Header {
-    padding-left: 20px;
     font-size: 50px;
-    color: whitesmoke;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -90,18 +88,6 @@ color: aliceblue;
     border: solid silver;
 }
 
-.userInput {
-    height: 600px;
-    border-style: inset;
-}
-
 #space {
     height: 20px;;
-}
-
-#appointInfo {
-    color: red;
-    font-style: italic;
-    position: relative;
-    top:20%;
 }
