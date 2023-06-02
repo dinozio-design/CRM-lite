@@ -19,24 +19,27 @@
 }
 .left-section {
     height: 65vh;
-    width: 25vh;
+  
     padding: 10px;
     margin-left: 10%;
 }
 .right-section {
     height: 65vh;
-    width:75vh ;
+  
     padding: 10px;
     margin-right: 10%;
 }
-footer {
+/*footer {
     position: absolute;
     bottom: 0;
-    height: 30px;
+    height: 0px;
     width: 100%;
+}*/
+.space {
+    height: 30px;;
 }
-#space {
-    height: 20px;;
+.space2{
+    border-right: 4px solid black;
 }
 #appointInfo {
     color: red;
