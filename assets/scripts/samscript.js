@@ -1,9 +1,6 @@
-// on click add/update the following to local storage:
-
-
-var appointmentInfo = [];
-
-const genData = [
+function init() {
+    // staticly generated data for dev purpose
+    const genData = [
         {
             "name": "Nerea Whitley",
             "phone": "1-717-230-2234",
@@ -55,15 +52,38 @@ const genData = [
             "date": "2024.08.20"
         }
     ];
+    var apptInfo = [];
+    $.each(genData, function (){
+        // console.log(this);
+        saveToLocalStorage(this);
+    })
+    // var opernWeatherKey = "71786d75fbc7f8c6556506473f4a9371";
+    // var userFormEl = $('#userForm');
+    // var displayArea = $('#displayArea');
+    var historyButtonsEl = $('#historyButtons');
+    var storedHistory = JSON.parse(localStorage.getItem("appointmentHistory"));
+    if (storedHistory !== null) {
+        apptInfo = storedHistory;
+        renderAppointments();
+    };
+    function renderAppointments() {
+        console.log(apptInfo);
+        historyButtonsEl.empty();
+        for (i = 0; i < apptInfo.length; i++) {
+            historyButtonsEl.append(`<button class="button" name=" ${apptInfo[i].name}">${apptInfo[i].date}, ${apptInfo[i].time}</button>`
+            );
+        }
+    };
+    function saveToLocalStorage(apptObj){
+        var 
+    }
+
+}
+init();
 
 
 
 
 
-function saveToLocalStorage(apptObj) {
-    localStorage.setItem("appointments", JSON.stringify(apptObj));
-        
-};
-
-saveToLocalStorage(appointmentInfo);
-
+// WHEN User Clicks submit then the script will take the input information and saves it in the apptInfo array
+// THEN the code will set
