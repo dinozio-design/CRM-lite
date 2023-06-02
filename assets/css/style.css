@@ -5,7 +5,7 @@
 }
 
 
-header,
+/*header,
 footer {
     height: 60px;
     width: 100%;
@@ -16,11 +16,15 @@ footer {
 header {
     border-bottom: beige solid 70px;
 }
-
-footer {
+*/
+  
+  
+  footer {
     position: absolute;
-bottom: 0%;
-}
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+  }
 
 .container {
     display: flex;
@@ -35,11 +39,11 @@ bottom: 0%;
      justify-content: space-between;
 }
 
-.Header {
+/*.Header {
     font-size: 50px;
     color: whitesmoke;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+}*/
 
 .left-section, .right-section {
     border: 4px solid #266150;
@@ -87,5 +91,5 @@ color: aliceblue;
 }*/
 
 #space {
-    height: 20px;;
+    height: 30px;;
 }
