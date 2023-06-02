@@ -67,7 +67,7 @@ function init() {
         renderAppointments();
     };
     function renderAppointments() {
-        console.log(apptInfo);
+        // console.log(apptInfo);
         historyButtonsEl.empty();
         for (i = 0; i < apptInfo.length; i++) {
             historyButtonsEl.append(`<button class="button" name=" ${apptInfo[i].name}">${apptInfo[i].date}, ${apptInfo[i].time}</button>`
@@ -75,7 +75,12 @@ function init() {
         }
     };
     function saveToLocalStorage(apptObj){
-        var 
+        console.log(apptObj);
+        console.log(apptObj.date);
+        console.log(apptObj.time.splice(" "));
+        
+        // var myDateSearchKey = `${apptObj.date}-${apptObj.time.splice(" ")}`;
+        // console.log(myDateSearchKey);
     }
 
 }
