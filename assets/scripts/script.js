@@ -1,5 +1,11 @@
 // var APIkey = "3fc619e2b6b7dda6c371bb7186f492ab";
+<<<<<<< HEAD
 var location = $("#Location");
+=======
+
+
+var location = $("#Location").value();
+>>>>>>> d56ab0c59215efe54e3b3f9e69efb91d1e04676a
 var APIkey = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&appid=3fc619e2b6b7dda6c371bb7186f492ab&units=imperial";
 
 
@@ -46,4 +52,8 @@ var APIkey = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + 
 
 
    
+<<<<<<< HEAD
   
+=======
+  
+>>>>>>> d56ab0c59215efe54e3b3f9e69efb91d1e04676a

@@ -4,25 +4,7 @@
     padding: 0;
 }
 
-
-header,
-footer {
-    height: 100px;
-    width: 100%;
-    line-height: 70px;
-    background-color: #266150;
-}
-
-header {
-    border-bottom: beige solid 70px;
-}
-
-footer {
-    position: absolute;
-bottom: 0%;
-}
-
-.containerM {
+.container {
     display: flex;
     justify-content: center;
 }
@@ -33,13 +15,6 @@ bottom: 0%;
      flex-direction: column;
      margin-top:50px ;
      justify-content: space-between;
-}
-
-.Header {
-    padding-left: 20px;
-    font-size: 50px;
-    color: whitesmoke;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .left-section, .right-section {
@@ -58,41 +33,14 @@ bottom: 0%;
     width:75vh ;
     padding: 10px;
     margin-right: 10%;
-    
-}
-
-/* .appointment1:hover {
-    background-color: burlywood;
-    color: aliceblue;
 }
 
 
-.appointment2:hover {
-background-color: burlywood;
-color: aliceblue;
-}
-
-.appointment1 {
-    height: 40px;
-    padding:10px 20px;
-    border-style: unset;
-    margin-bottom: 10px;
-    background-color: gainsboro;
-    border: solid silver;
-}
-
-
-.appointment2 {
-    height: 40px;
-    padding: 5%;
-    border-style: unset;
-    background-color: gainsboro;
-    border: solid silver;
-} */
-
-.userInput {
-    height: 600px;
-    border-style: inset;
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
 }
 
 #space {
@@ -104,4 +52,9 @@ color: aliceblue;
     font-style: italic;
     position: relative;
     top:20%;
+}
+
+.userInput {
+    height: 600px;
+    border-style: inset;
 }

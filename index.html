@@ -12,8 +12,9 @@
     <title>CRM Lite</title>
 </head>
 
+
 <body>
-    <header >
+    <header class="is-large" >
     <div class="hero-head has-shadow">
        <nav class="navbar card is-success">
         <div class="container">
@@ -50,37 +51,32 @@
    
     <div id="space"></div>
     <div class="container">
-        <div class=" left-section column is-one-third">
+        <div class=" left-section column is-two-fifths">
             <h1>Left Section </h1>
             <div class="column buttons are-medium">
                 <input class="button is-success" type="submit" value="Show all Appointments">
-               
-                <input onclick="window.location.href = 'addNewAppointment.html';" class="button is-link" type="submit" value=" Add New Appointment" >
-                
+                <input  onclick="window.location.href = 'addNewAppointment.html';" class="button is-link" type="submit" value=" Add New Appointment">
             </div>
         </div>
-
         <div class="right-section column is-three-quarters">
             <h1>Right Section</h1>
         </div>
     </div>
-
-    <footer>
-        <div class="navbar-menu"  id="nav-links">
-        <div class="content has-text-left">
-            <p class=" has-text-white has-text-weight-bold">
-                ©  2023 CRM Lite
+    <footer class="footer has-background-dark">
+        <div class="content has-text-white">
+            <p class="has-text-weight-bold">
+                © 2023 CRM Lite
             </p>
-          </div>
-       
-        <div class="navbar-end ">
-            <a class="navbar-item has-text-white">Contact</a>
-            <a class="navbar-item has-text-white">Privacy Policy</a>
-            <a class="navbar-item has-text-white">Terms&Conditions</a>
-            <a class="navbar-item has-text-white">Disclaimer</a>
         </div>
-       </div>
+
+        <div class="content has-text-white has-text-right">
+            <a class="has-text-white">Contact</a>
+            <a class="has-text-white">Privacy Policy</a>
+            <a class="has-text-white">Terms&Conditions</a>
+            <a class="has-text-white">Disclaimer</a>
+        </div>
     </footer>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 
 </html>
