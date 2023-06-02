@@ -1,5 +1,7 @@
 // var APIkey = "3fc619e2b6b7dda6c371bb7186f492ab";
-var location = $("#Location");
+
+
+var location = $("#Location").value();
 var APIkey = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&appid=3fc619e2b6b7dda6c371bb7186f492ab&units=imperial";
 
 
