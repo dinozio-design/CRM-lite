@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,82 +7,112 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script> 
+    <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <title>CRM Lite</title>
 </head>
-
 <body>
-   
-    <header >
-    <div class="hero-head has-shadow">
+    <header class="section is-fullheight-with-navbar block" >
+    <div class="hero-head has-shadow ">
        <nav class="navbar card">
-        <div class="container">
-            <div class="navbar-brand is-size-4">
-                <a class="title is-2 has-text-danger-dark">CRM Lite</a>
+        <div class="container ">
+            <div class="navbar-brand ">
+                <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
                 
-            </div>
-                <div class="navbar-end">
-                <nav class="breadcrumb" aria-label="breadcrumbs">
-                    <ul>
-                        <li class="is-active">
+                <figure class="image  is-96x96">
+                    <img  src="./assets/images/logo.png">
+                </figure>
+                <span  class="navbar-burger" aria-label="menu"  data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </span>
+                  </div>
+                <div id="navbarMenu" class="navbar-menu " >
+                    <div class="navbar-end">
+                        <span class="navbar-item">
                             <span class="icon has-text-danger-dark">
                                 <i class="fas fa-home"></i>
                             </span>
-                            <a href="#" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                        <a href="#">About us</a>
-                        </li>
-                        <li>
-                        <a href="#">Services</a>
-                       </li>
-                       <li>
-                        <a href="#">Pricing</a>
-                       </li> 
-                    </ul>
-                </nav>
+                        </span>
+                        <a class="navbar-item is-active "href="#" aria-current="page">Home</a>
+                        <a class="navbar-item has-text-link" href="#">About us</a>
+                        
+                        <a class="navbar-item has-text-link" href="#">New Appointment</a>
+                       
+                        <a class="navbar-item has-text-link" href="#">Pricing</a>
+                    
+                    </div>
+                </div>
+         </div>
+       </nav>
+    </div>
+    </header>
+    <div id="space"></div>
+    <div class="hero body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-one-third">
+                    <p class="title is-1">A beautiful Lawn doesnt happen by itself</p>
+                    <p class="subtitle">-Green Grass is here for you always</p>
+                </div>
+                <div class="column is-two-thirds">
+                    <img src="./assets/images/mowing.png" alt="logo">
                 </div>
             </div>
         </div>
-       </nav>
     </div>
-  
-    </header>
-   
-    <div id="space"></div>
-    <div class="container is-centered">
-        <div class=" left-section column is-two-fifths">
-            <h1>Left Section </h1>
+    <div class="space"></div>
+    <div class="container">
+        <div class=" left-section column ">
+            <p class="subtitle has-text-weight-semibold">Left Section </p>
             <div class="column buttons are-medium">
-                <input class="button is-success" type="submit" value="Show all Appointments">
-               
-                <input class="button is-link" type="submit" value=" Add New Appointment">
-                
+                <button class="button is-success is-size-7-mobile" type="submit">Show All appointments</button>
+                <input  onclick="window.location.href = 'addNewAppointment.html';" class="button is-link is-size-7-mobile" type="submit" value=" Add New Appointment">
             </div>
         </div>
-
         <div class="right-section column is-three-quarters">
-            <h1>Right Section</h1>
+            <p class="subtitle has-text-weight-semibold">Right Section</p>
         </div>
     </div>
+    <div class="space"></div>
 
-    <footer class="footer has-background-success is-full" >
-       
-     
-            <p class="content has-text-left has-text-white has-text-weight-bold">
-                ©  2023 CRM Lite
-            </p>
-      
-       
-        <div class="navbar-end ">
-            <a class="navbar-item has-text-black">Contact</a>
-            <a class="navbar-item has-text-white">Privacy Policy</a>
-            <a class="navbar-item has-text-white">Terms&Conditions</a>
-            <a class="navbar-item has-text-white">Disclaimer</a>
-        </div>
-     
-    </footer>
+    <div class="hero body">
+    <div class="container">
+    <div class="columns is-vcentered">
+   <div  class="column is-two-fifths" >
+    <img  class="space2 "src="./assets/images/logo.png">
+   </div>
+   <div class="column is-one-third ">
+     <div class="container has-text-danger-dark">
+        <ul >
+            <li><a class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-twitter  has-text-link"></i> Twitter</a></li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
+        </ul>
+     </div> 
+   </div>
+   <div class="column is-one-third ">
+    <div class="container has-text-danger-dark">
+       <ul >
+           <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
+       </ul>
+    </div> 
+  </div>
+   </div>
+</div>
+</div>
+    <div class="space"></div>
+  <footer class="has-background-dark has-text-centered has-text-white py-6">
+    
+    <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>    
+</footer>
 
+    <script src="./assets/scripts/script.js"></script>
 </body>
-
 </html>
