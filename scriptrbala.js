@@ -1,23 +1,26 @@
 // my APIKey is "b4ed94adc674507878b0aeb7f93e988b";
+var enterCityName = $("#cityName");
+var confirmAppointment = $("#confirm");
+
 $(document).ready(function(){
   //event listener on search button
-$("#searchbtn").on("click",function(){
+confirmAppointment.on("click",function(){
   //get value in input search value
-  var searchCity = $("#search-value").val();
-  $("search-value").val(" ");
+  var searchCity = enterCityName.val();
+  enterCityName.val(" ");
   
   weatherForecast(searchCity);
-  // canadianholidays();
+  canadianholidays();
 });
 
 //The keypress event is fired when a key that produces a character value is pressed down.
-$("#searchbtn").keypress(function(event){
+confirmAppointment.keypress(function(event){
   var keycode = (event.keycode ? event.keycode : event.which);
   if(keycode === 13)
   {
     
     weatherForecast(searchCity);
-    // canadianholidays();
+    canadianholidays();
   }
 })
 
@@ -64,7 +67,15 @@ function canadianholidays(){
 
   })
   .then(function(data){
-    console.log(data)
+    console.log(data);
+    $("#holidays").html("<h4 class=\"mt-4\">Canadians Holidays:</h4>").append("<div class=\"row\">");
+    for (var i = 0; i < holidays.length; i++) {
+      var cardholidays =    $("<div>").css("background-color:blue color:White")
+    var displayHolidays = $("<p>").text("Wind: " + holidays[i].date);
+    var displayHolidaysss = $("<p>").text("Wind: " + holidays[i].nameEn);
+ console.log(displayHolidaysss)
+
+  }
   })
 }
 })
