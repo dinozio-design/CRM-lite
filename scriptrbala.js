@@ -9,3 +9,14 @@ $("#searchbtn").on("click",function(){
   weatherForecast(searchCity);
   // canadianholidays();
 });
+
+//The keypress event is fired when a key that produces a character value is pressed down.
+$("#searchbtn").keypress(function(event){
+  var keycode = (event.keycode ? event.keycode : event.which);
+  if(keycode === 13)
+  {
+    weatherDashboard(searchCity);
+    weatherForecast(searchCity);
+    // canadianholidays();
+  }
+})
