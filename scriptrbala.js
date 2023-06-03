@@ -39,3 +39,41 @@ function weatherDashboard(searchCity){
 
   });
 }
+
+// function weatherForecast(searchTerm) 
+function weatherForecast(searchCity) {
+ 
+  fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + searchCity + "&appid=b4ed94adc674507878b0aeb7f93e988b&units=imperial")
+  .then(function(response){
+    return response.json();
+  })
+
+.then(function (data) {
+  console.log(data);
+  $("#forecast").html("<h4 class=\"mt-3\">5-Day Forecast:</h4>").append("<div class=\"row\">");
+
+  //loop to create a new card for 5 days weather forecast`
+  for (var i = 0; i < data.list.length; i++) {
+
+    if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
+
+      var titleFivedays = $("<h3>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
+      var imgFivedays = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
+      var colFivedays = $("<div>").addClass("col-md-2.5");
+      var cardFivedays = $("<div>").addClass("card bg-primary text-white");
+      var cardBodyFivedays = $("<div>").addClass("card-body p-2");
+      var windFivedays = $("<p>").addClass("card-text").text("Wind: " + data.list[i].wind.speed + " MPH");
+      var humidFivedays = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
+      var tempFivedays = $("<p>").addClass("card-text").text("Temperature: " + data.list[i].main.temp + " °F");
+  
+
+      //combine together and display on page
+      colFivedays.append(cardFivedays.append(cardBodyFivedays.append(titleFivedays, imgFivedays, tempFivedays, humidFivedays,windFivedays)));
+      //append card to column, body to card, and other elements to body
+      $("#forecast .row").append(colFivedays);
+    }
+  }
+});
+}
+
+})
