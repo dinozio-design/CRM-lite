@@ -20,3 +20,22 @@ $("#searchbtn").keypress(function(event){
     // canadianholidays();
   }
 })
+
+
+//weatherDashboard function
+function weatherDashboard(searchCity){
+  //fetch weather api
+  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + searchCity + "&appid=b4ed94adc674507878b0aeb7f93e988b")
+  .then(function(response){
+    return response.json();
+  })
+ 
+  .then(function(data){
+    if(previousWeatherSearch.indexOf(searchCity) === -1){
+      previousWeatherSearch.push(searchCity);
+      localStorage.setItem("previousWeatherSearch",JSON.stringify(previousWeatherSearch));
+      createRow(searchCity);
+    }
+
+  });
+}
