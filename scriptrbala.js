@@ -5,7 +5,7 @@ $("#searchbtn").on("click",function(){
   //get value in input search value
   var searchCity = $("#search-value").val();
   $("search-value").val(" ");
-  weatherDashboard(searchCity);
+  
   weatherForecast(searchCity);
   // canadianholidays();
 });
@@ -15,30 +15,12 @@ $("#searchbtn").keypress(function(event){
   var keycode = (event.keycode ? event.keycode : event.which);
   if(keycode === 13)
   {
-    weatherDashboard(searchCity);
+    
     weatherForecast(searchCity);
     // canadianholidays();
   }
 })
 
-
-//weatherDashboard function
-function weatherDashboard(searchCity){
-  //fetch weather api
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + searchCity + "&appid=b4ed94adc674507878b0aeb7f93e988b")
-  .then(function(response){
-    return response.json();
-  })
- 
-  .then(function(data){
-    if(previousWeatherSearch.indexOf(searchCity) === -1){
-      previousWeatherSearch.push(searchCity);
-      localStorage.setItem("previousWeatherSearch",JSON.stringify(previousWeatherSearch));
-      createRow(searchCity);
-    }
-
-  });
-}
 
 // function weatherForecast(searchTerm) 
 function weatherForecast(searchCity) {
@@ -75,5 +57,14 @@ function weatherForecast(searchCity) {
   }
 });
 }
+function canadianholidays(){
+  fetch("https://canada-holidays.ca/api/v1/holidays?year=2023")
+  .then(function(response){
+    return response.json();
 
+  })
+  .then(function(data){
+    console.log(data)
+  })
+}
 })
