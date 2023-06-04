@@ -1,3 +1,4 @@
+var apptInfo = [];
 function init() {
     // staticly generated data for dev purpose
     const genData = [
@@ -58,11 +59,6 @@ function init() {
             "time": "13:26"
           }
     ];
-    var apptInfo = [];
-    $.each(genData, function (){
-        // console.log(this);
-        saveToLocalStorage(this);
-    })
     function contains(key) {
         for (i = 0; i < apptInfo.length; i++) {
             if (apptInfo[i].key === key) {
@@ -72,6 +68,22 @@ function init() {
         };
         return false;
     }
+    function compare( a, b ) {
+        if ( (a.date < b.date)&& (a.time < b.time)){
+          return -1;
+        }
+        if ( (a.date > b.date)&& (a.time > b.time) ){
+          return 1;
+        }
+        return 0;
+      }
+      
+    genData.sort(compare);
+    $.each(genData, function (){
+        // console.log(this);
+        saveToLocalStorage(this);
+    })
+
     // var opernWeatherKey = "71786d75fbc7f8c6556506473f4a9371";
     // var userFormEl = $('#userForm');
     // var displayArea = $('#displayArea');
@@ -87,18 +99,17 @@ function init() {
         // console.log(apptInfo);
         displayAreaRight.empty();
         for (i = 0; i < apptInfo.length; i++) {
-            // ${apptInfo[i].id}
             displayAreaRight.append(`<article class="tile is-child notification is-info"><p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p><p>${apptInfo[i].address}, ${apptInfo[i].city}, ${apptInfo[i].prov} | Phone: ${apptInfo[i].phone}<span>    icons</span></p></article>`);
         }
     };
     function saveToLocalStorage(apptObj){
-        console.log(apptObj);
-        console.log(apptObj.date);
-        console.log(apptObj.time);
+        // console.log(apptObj);
+        // console.log(apptObj.date);
+        // console.log(apptObj.time);
 
         let foundDouplicate = contains(apptObj.id);
         if (!foundDouplicate) {
-            // console.log(`no duoplicates`);
+            console.log(`no duoplicates`);
             apptInfo.push(apptObj);
             localStorage.setItem("appointment_history", JSON.stringify(apptInfo));
         };
