@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,86 +7,107 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script> 
+    <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <title>CRM Lite</title>
 </head>
-
 <body>
-    <header >
-    <div class="hero-head has-shadow">
-       <nav class="navbar card is-success">
-        <div class="container">
-            <div class="navbar-brand is-size-5">
-                <a class="title is-2 has-text-danger-dark">CRM Lite</a>
-                </div>
-                <div class="navbar-end">
-                <nav class="breadcrumb" aria-label="breadcrumbs">
-                    <ul>
-                        <li class="is-active">
+    <header class="section is-fullheight-with-navbar block" >
+    <div class="hero-head has-shadow ">
+       <nav class="navbar card">
+        <div class="container ">
+            <div class="navbar-brand ">
+                <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
+                
+                <figure class="image  is-96x96">
+                    <img  src="./assets/images/logo.png">
+                </figure>
+                <span  class="navbar-burger" aria-label="menu"  data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </span>
+                  </div>
+                <div id="navbarMenu" class="navbar-menu " >
+                    <div class="navbar-end">
+                        <span class="navbar-item">
                             <span class="icon has-text-danger-dark">
-                                <i class="fas fa-home"></i>
+                                <i class="fa fa-home"></i>
                             </span>
-                            <a href="#" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                        <a href="#">About us</a>
-                        </li>
-                        <li>
-                        <a href="#">Services</a>
-                       </li>
-                       <li>
-                        <a href="#">Pricing</a>
-                       </li> 
-                    </ul>
-                </nav>
+                        </span>
+                        <a class="navbar-item is-active "href="#" aria-current="page">Home</a>
+                        <a class="navbar-item has-text-link" href="#">About us</a>
+                        
+                        <a class="navbar-item has-text-link" href="#">New Appointment</a>
+                       
+                        <a class="navbar-item has-text-link" href="#">Pricing</a>
+                    
+                    </div>
                 </div>
-            </div>
-        </div>
+         </div>
        </nav>
     </div>
-  
     </header>
-   
-    <div id="space"></div>
-    <div class="container">
-        <div class=" left-section column is-one-third">
-            <h1>Left Section </h1>
-            <div class="container1">
-                <input class="appointment1" type="button" value="Show all Appointments" id="show-me-appointments">
-                <input class="appointment2" type="button" value=" Add New Appointment">
 
+
+   
+    <div class="hero body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-one-third">
+                    <p class="title is-1 is-italic">A beautiful Lawn doesn't happen by itself!
+                    </p>
+                    <p class="subtitle has-text-success-dark is-italic mt-3">-Green Grass is here for you always</p>
+                </div>
+                <div class="column is-two-thirds">
+                    <img src="./assets/images/mowing.png" alt="logo">
+                </div>
             </div>
         </div>
-
-        <div class="right-section column is-three-quarters">
-            <h1>Right Section</h1>
-        </div>
     </div>
+    <div class="space"></div>
 
-    <footer>
-        <div class="navbar-menu  id="nav-links">
-        <div class="content has-text-left">
-            <p class=" has-text-white has-text-weight-bold">
-                ©  2023 CRM Lite
-            </p>
+    <!-- <div class="hero body"> 
+    <div class="columns is-vcentered is-justify-content-space-evenly has-background-success-dark  ">
+        <div class="column has-text-centered">
+          <p class="title is-italic is-3 is-spaced has-text-black">Book and View all your appoinments here</p>
+          <figure class="image  is-96x96 column">
+            <img  src="./assets/images/lookdown.png">
+        </figure>
+        </div>
+        
+    </div>
+    
+</div>-->
+
+
+<div class="columns  is-small has-background-success-dark is-mobile is-centered is-vcentered">
+   
+    <div class="column  ml-5 is-one-third">
+      <span class="subtitle has-text-black has-text-weight-semibold is-italic has-text-centered">Manage your Appointments</span>
+    </div>
+    <div class="column has-text-centered">
+        <figure class="image  is-96x96 column ">
+            <img  src="./assets/images/lookdown.png">
+        </figure>
+    </div>
+  </div>
+
+<div class="space"></div>
+<div class="is-centered">
+    <div class="card column ">
+        <div class="card-content">
+          <div class="content">
+            <div class="column buttons are-medium">
+                <button class="button is-success is-size-7-mobile" type="submit">Show All appointments</button>
+                <input  onclick="window.location.href = 'addNewAppointment.html';" class="button is-link is-size-7-mobile" type="submit" value=" Add New Appointment">
+            </div>
           </div>
-       
-        <div class="navbar-end ">
-            <a class="navbar-item has-text-white">Contact</a>
-            <a class="navbar-item has-text-white">Privacy Policy</a>
-            <a class="navbar-item has-text-white">Terms&Conditions</a>
-            <a class="navbar-item has-text-white">Disclaimer</a>
         </div>
        </div>
     </footer>
-<!-- <<<<<<< HEAD -->
-    <script src="./assets/scripts/samscript.js"></script>
-<!-- =======
-<<<<<<< HEAD -->
+<<<<<<< HEAD
     <script src="./assets/scripts/script.js"></script>
-<!-- =======
+=======
 >>>>>>> 8b8359179620d0f32d2f35c1e1ec5ccedce94341
->>>>>>> d56ab0c59215efe54e3b3f9e69efb91d1e04676a -->
 </body>
-
 </html>
