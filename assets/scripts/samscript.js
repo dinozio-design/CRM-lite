@@ -83,10 +83,6 @@ function init() {
         // console.log(this);
         saveToLocalStorage(this);
     })
-
-    // var opernWeatherKey = "71786d75fbc7f8c6556506473f4a9371";
-    // var userFormEl = $('#userForm');
-    // var displayArea = $('#displayArea');
     
     var displayAreaRight = $('#rightDisplay');
     var displayAreaLeft = $('#lefttDisplay');
@@ -96,26 +92,18 @@ function init() {
         renderAppointments();
     };
     function renderAppointments() {
-        // console.log(apptInfo);
         displayAreaRight.empty();
         for (i = 0; i < apptInfo.length; i++) {
             displayAreaRight.append(`<article class="tile is-child notification is-info"><p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p><p>${apptInfo[i].address}, ${apptInfo[i].city}, ${apptInfo[i].prov} | Phone: ${apptInfo[i].phone}<span>    icons</span></p></article>`);
         }
     };
     function saveToLocalStorage(apptObj){
-        // console.log(apptObj);
-        // console.log(apptObj.date);
-        // console.log(apptObj.time);
-
         let foundDouplicate = contains(apptObj.id);
         if (!foundDouplicate) {
             console.log(`no duoplicates`);
             apptInfo.push(apptObj);
             localStorage.setItem("appointment_history", JSON.stringify(apptInfo));
         };
-        
-        // var myDateSearchKey = `${apptObj.date}-${apptObj.time.splice(" ")}`;
-        // console.log(myDateSearchKey);
     }
 
 }
