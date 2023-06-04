@@ -3,34 +3,59 @@ function init() {
     const genData = [
         {
             "id": 1,
-            "full-name": "Dannye Colbron",
-            "email": "dcolbron0@eventbrite.com",
-            "phone": "259-926-8025",
-            "address": "12719 Blackbird Crossing",
-            "city": "Little Current",
+            "fullName": "Lowell Bowland",
+            "email": "lbowland0@t.co",
+            "phone": "593-913-2017",
+            "address": "8859 3rd Court",
+            "city": "Greater Napanee",
             "prov": "Ontario",
-            "postalZip": "J6A",
-            "date": "2023-07-20"
+            "postalZip": "K7R",
+            "date": "2024-05-01",
+            "time": "10:28"
           }, {
             "id": 2,
-            "full-name": "Web Domerc",
-            "email": "wdomerc1@paypal.com",
-            "phone": "378-731-1527",
-            "address": "45252 Troy Point",
-            "city": "Mississauga",
+            "fullName": "Charisse Slott",
+            "email": "cslott1@blog.com",
+            "phone": "210-102-8504",
+            "address": "64 High Crossing Way",
+            "city": "Powassan",
             "prov": "Ontario",
-            "postalZip": "L5W",
-            "date": "2023-10-28"
+            "postalZip": "E3G",
+            "date": "2024-02-02",
+            "time": "14:00"
           }, {
             "id": 3,
-            "full-name": "Maurine Teggart",
-            "email": "mteggart2@craigslist.org",
-            "phone": "364-334-9182",
-            "address": "2472 Anniversary Plaza",
-            "city": "North York",
+            "fullName": "Dorris Bleyman",
+            "email": null,
+            "phone": "369-763-8850",
+            "address": "3 Boyd Parkway",
+            "city": "Wingham",
             "prov": "Ontario",
-            "postalZip": "M3H",
-            "date": "2023-06-12"
+            "postalZip": "T5K",
+            "date": "2023-09-03",
+            "time": "1:11"
+          }, {
+            "id": 4,
+            "fullName": "Tiffie Moan",
+            "email": "tmoan3@umn.edu",
+            "phone": "965-484-1861",
+            "address": "2933 Lake View Street",
+            "city": "Windsor",
+            "prov": "Ontario",
+            "postalZip": "J1S",
+            "date": "2024-05-09",
+            "time": "5:09"
+          }, {
+            "id": 5,
+            "fullName": "Andie Styant",
+            "email": null,
+            "phone": "781-501-3314",
+            "address": "5288 Burning Wood Junction",
+            "city": "Hearst",
+            "prov": "Ontario",
+            "postalZip": "S4A",
+            "date": "2023-07-29",
+            "time": "13:26"
           }
     ];
     var apptInfo = [];
@@ -38,27 +63,45 @@ function init() {
         // console.log(this);
         saveToLocalStorage(this);
     })
+    function contains(key) {
+        for (i = 0; i < apptInfo.length; i++) {
+            if (apptInfo[i].key === key) {
+                console.log(`found Douplicate`);
+                return true;
+            }
+        };
+        return false;
+    }
     // var opernWeatherKey = "71786d75fbc7f8c6556506473f4a9371";
     // var userFormEl = $('#userForm');
     // var displayArea = $('#displayArea');
-    var historyButtonsEl = $('#historyButtons');
-    var storedHistory = JSON.parse(localStorage.getItem("appointmentHistory"));
+    
+    var displayAreaRight = $('#rightDisplay');
+    var displayAreaLeft = $('#lefttDisplay');
+    var storedHistory = JSON.parse(localStorage.getItem("appointment_history"));
     if (storedHistory !== null) {
         apptInfo = storedHistory;
         renderAppointments();
     };
     function renderAppointments() {
         // console.log(apptInfo);
-        historyButtonsEl.empty();
+        displayAreaRight.empty();
         for (i = 0; i < apptInfo.length; i++) {
-            historyButtonsEl.append(`<button class="button" name=" ${apptInfo[i].name}">${apptInfo[i].date}, ${apptInfo[i].time}</button>`
-            );
+            // ${apptInfo[i].id}
+            displayAreaRight.append(`<article class="tile is-child notification is-info"><p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p><p>${apptInfo[i].address}, ${apptInfo[i].city}, ${apptInfo[i].prov} | Phone: ${apptInfo[i].phone}<span>    icons</span></p></article>`);
         }
     };
     function saveToLocalStorage(apptObj){
         console.log(apptObj);
         console.log(apptObj.date);
         console.log(apptObj.time);
+
+        let foundDouplicate = contains(apptObj.id);
+        if (!foundDouplicate) {
+            // console.log(`no duoplicates`);
+            apptInfo.push(apptObj);
+            localStorage.setItem("appointment_history", JSON.stringify(apptInfo));
+        };
         
         // var myDateSearchKey = `${apptObj.date}-${apptObj.time.splice(" ")}`;
         // console.log(myDateSearchKey);
