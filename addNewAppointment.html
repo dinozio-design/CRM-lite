@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>    
+    <title>CRM Lite</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="section is-fullheight-with-navbar block" >
+    <div class="hero-head has-shadow ">
+       <nav class="navbar card">
+        <div class="container ">
+            <div class="navbar-brand ">
+                <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
+                
+                <figure class="image  is-96x96">
+                    <img  src="./assets/images/logo.png">
+                </figure>
+                <span  class="navbar-burger" aria-label="menu"  data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </span>
+                  </div>
+                <div id="navbarMenu" class="navbar-menu " >
+                    <div class="navbar-end">
+                        <span class="navbar-item">
+                            <span class="icon has-text-danger-dark">
+                                <i class="fas fa-home"></i>
+                            </span>
+                        </span>
+                        <a class="navbar-item is-active "href="#" aria-current="page">Home</a>
+                        <a class="navbar-item has-text-link" href="#">About us</a>
+                        
+                        <a class="navbar-item has-text-link" href="#">New Appointment</a>
+                       
+                        <a class="navbar-item has-text-link" href="#">Pricing</a>
+                    
+                    </div>
+                </div>
+         </div>
+       </nav>
+    </div>
+    </header>
+    <!-- This is the appointment image -->
+    <div class="hero-body">
+        <div class="container">
+        <img src="./assets/images/business.jpg" alt="">
+
+        </div>
+
+    </div>
+<!-- This is the Banner (yellow) -->
+    <section class="hero is-warning">
+        <div class="hero-body has-background-warning-light">
+          <p class="title">
+            Appointment Booking
+          </p>
+          <p class="subtitle">
+            Fill out the provided customer information!
+          </p>
+        </div>
+      </section>
+
+<!-- This is the left hand side box -->
+    <div class="level-left">
+    <div class="box column is-one-third ">
+      Unsure if Weather api or Holiday Api goes here
+    </div>
+
+
+
+    
+
+<!-- This is the right hand side box, that will have the form elements -->
+       <form class="box column is-two-quarters mx-2">
+<!-- This is the form element for full name -->
+<!-- Want to add a function in which the check icon turns green when a value is inputted -->
+            <div class="field">
+                <label class="label is-underlined">Full Name</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-info" type="text" placeholder="E.g Alex Pain">
+                    <span class="icon is-small is-left">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fa fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+
+<!-- This is the form element for the Email -->
+<!-- Want to add a function in which the check icon turns green when a value is inputted -->
+
+        <div class="field">
+          <label class="label is-underlined">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-info" type="email" placeholder="E.g. alex@example.com">
+            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+            </span>  
+  
+        </div>
+        </div>
+<!-- This is the form element for the Phone # -->
+<!-- Want to add a function in which the check icon turns green when a value is inputted -->
+        <div class="field">
+          <label class="label is-underlined">Phone Number</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-info" type="number" placeholder="E.g (123)-456-7890">
+        <span class="icon is-small is-left">
+            <i class="fa fa-phone"></i>
+        </span>  
+        <span class="icon is-small is-right">
+            <i class="fa fa-check"></i>
+        </span>
+
+
+<!-- This is the form element for the Date -->
+        <div class="field">
+            <label class="label is-underlined"> Date </label>
+            <div>
+                <input type="date">
+            </div>
+        </div>
+    
+<!-- This is the form element for the dropdown BUT THE BUTTON IS NOT WORKING -->
+        <div class="field">
+            <label class="label is-underlined"> Time-slot </label>
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" role="menu">
+                        <span> Dropdown button </span>
+                        <span class="icon is-small"></span>
+                        <i class="fas fa-angle-down mx-3" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                        <a href="" class="dropdown-item">
+                        8:00  am 
+                        </a>
+                        <a href="" class="dropdown-item">
+                        8:30 am
+                        </a>
+                        <a href="" class="dropdown-item">
+                        9:00 am
+                        </a>
+                        <a href="" class="dropdown-item">
+                        9:30 am
+                        </a>
+                        <a href="" class="dropdown-item">
+                        10:00 am
+                        </a>
+                        <a href="" class="dropdown-item">
+                        10:30 am
+                        </a>
+                        <a href="" class="dropdown-item">
+                        11:00 am
+                        </a>
+                        <a href="" class="dropdown-item">
+                        11:30 am
+                        </a>
+                        <a href="" class="dropdown-item">
+                        12:00 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        12:30 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        1:00 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        1:30 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        2:00 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        2:30 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        3:00 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        3:30 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        4:00 pm
+                        </a>
+                        <a href="" class="dropdown-item">
+                        4:30
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- This is the form element for the address -->
+<div class="field">
+    <label class="label is-underlined">Address</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-info" type="text" placeholder="E.g 112 Main St E, Toronto">
+  <span class="icon is-small is-left">
+      <i class="fa fa-home"></i>
+  </span>  
+  <span class="icon is-small is-right">
+      <i class="fa fa-check"></i>
+  </span>
+<!-- This is the form element for the Postal Code -->
+
+<div class="field">
+    <label class="label is-underlined">Postal Code</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input is-info" type="text" placeholder="E.g A1B C2D">
+  <span class="icon is-small is-left">
+      <i class="fa fa-map"></i>
+  </span>  
+  <span class="icon is-small is-right">
+      <i class="fa fa-check"></i>
+  </span>
+
+<!-- This is the confirm and save button -->
+        </div>
+        </div>
+        <button class="button is-primary">Confirm & Save</button>
+      </form>
+      </div>
+
+
+    <div class="space"></div>
+
+    <div class="hero body">
+    <div class="container">
+    <div class="columns is-vcentered">
+   <div  class="column is-two-fifths" >
+    <img  class="space2 "src="./assets/images/logo.png">
+   </div>
+   <div class="column is-one-third ">
+     <div class="container has-text-danger-dark">
+        <ul >
+            <li><a class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-twitter  has-text-link"></i> Twitter</a></li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
+            <li><a href="" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
+        </ul>
+     </div> 
+   </div>
+   <div class="column is-one-third ">
+    <div class="container has-text-danger-dark">
+       <ul >
+           <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
+           <li><a href="" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
+       </ul>
+    </div> 
+  </div>
+   </div>
+</div>
+</div>
+    <div class="space"></div>
+  <footer class="has-background-dark has-text-centered has-text-white py-6">
+    
+    <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>    
+</footer>
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
