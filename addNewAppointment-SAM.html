@@ -72,168 +72,171 @@
         </div>
     </section>
 
-    <div  class="level-left">
+    <div class="level-left">
         <!-- This is the left hand side box -->
-        <div id="allAppts" class="box column is-one-third ">
+        <div id="leftDisplay" class="box column is-one-third ">
             Unsure if Weather api or Holiday Api goes here
         </div>
         <!-- This is the right hand side box, that will have the form elements -->
-        <form class="box column is-two-quarters mx-2">
-            <!-- This is the form element for full name -->
-            <!-- Want to add a function in which the check icon turns green when a value is inputted -->
-            <div class="field">
-                <label class="label is-underlined">Full Name</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input is-info" type="text" placeholder="E.g Alex Pain">
-                    <span class="icon is-small is-left">
-                        <i class="fa fa-user"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fa fa-check"></i>
-                    </span>
-                </div>
-            </div>
-
-
-            <!-- This is the form element for the Email -->
-            <!-- Want to add a function in which the check icon turns green when a value is inputted -->
-
-            <div class="field">
-                <label class="label is-underlined">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input is-info" type="email" placeholder="E.g. alex@example.com">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
-
-                </div>
-            </div>
-            <!-- This is the form element for the Phone # -->
-            <!-- Want to add a function in which the check icon turns green when a value is inputted -->
-            <div class="field">
-                <label class="label is-underlined">Phone Number</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input is-info" type="number" placeholder="E.g (123)-456-7890">
-                    <span class="icon is-small is-left">
-                        <i class="fa fa-phone"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fa fa-check"></i>
-                    </span>
-
-
-                    <!-- This is the form element for the Date -->
-                    <div class="field">
-                        <label class="label is-underlined"> Date </label>
-                        <div>
-                            <input type="date">
-                        </div>
+        <div id="rightDisplay">
+            <form class="box column is-two-quarters mx-2">
+                <!-- This is the form element for full name -->
+                <!-- Want to add a function in which the check icon turns green when a value is inputted -->
+                <div class="field">
+                    <label class="label is-underlined">Full Name</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-info" type="text" placeholder="E.g Alex Pain">
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fa fa-check"></i>
+                        </span>
                     </div>
+                </div>
 
-                    <!-- This is the form element for the dropdown BUT THE BUTTON IS NOT WORKING -->
-                    <div class="field">
-                        <label class="label is-underlined"> Time-slot </label>
-                        <div class="dropdown">
-                            <div class="dropdown-trigger">
-                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" role="menu">
-                                    <span> Dropdown button </span>
-                                    <span class="icon is-small"></span>
-                                    <i class="fas fa-angle-down mx-3" aria-hidden="true"></i>
-                                </button>
+
+                <!-- This is the form element for the Email -->
+                <!-- Want to add a function in which the check icon turns green when a value is inputted -->
+
+                <div class="field">
+                    <label class="label is-underlined">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-info" type="email" placeholder="E.g. alex@example.com">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+
+                    </div>
+                </div>
+                <!-- This is the form element for the Phone # -->
+                <!-- Want to add a function in which the check icon turns green when a value is inputted -->
+                <div class="field">
+                    <label class="label is-underlined">Phone Number</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-info" type="number" placeholder="E.g (123)-456-7890">
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-phone"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fa fa-check"></i>
+                        </span>
+
+
+                        <!-- This is the form element for the Date -->
+                        <div class="field">
+                            <label class="label is-underlined"> Date </label>
+                            <div>
+                                <input type="date">
                             </div>
+                        </div>
 
-                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                <div class="dropdown-content">
-                                    <a href="" class="dropdown-item">
-                                        8:00 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        8:30 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        9:00 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        9:30 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        10:00 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        10:30 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        11:00 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        11:30 am
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        12:00 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        12:30 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        1:00 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        1:30 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        2:00 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        2:30 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        3:00 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        3:30 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        4:00 pm
-                                    </a>
-                                    <a href="" class="dropdown-item">
-                                        4:30
-                                    </a>
+                        <!-- This is the form element for the dropdown BUT THE BUTTON IS NOT WORKING -->
+                        <div class="field">
+                            <label class="label is-underlined"> Time-slot </label>
+                            <div class="dropdown">
+                                <div class="dropdown-trigger">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"
+                                        role="menu">
+                                        <span> Dropdown button </span>
+                                        <span class="icon is-small"></span>
+                                        <i class="fas fa-angle-down mx-3" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <a href="" class="dropdown-item">
+                                            8:00 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            8:30 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            9:00 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            9:30 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            10:00 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            10:30 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            11:00 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            11:30 am
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            12:00 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            12:30 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            1:00 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            1:30 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            2:00 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            2:30 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            3:00 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            3:30 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            4:00 pm
+                                        </a>
+                                        <a href="" class="dropdown-item">
+                                            4:30
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- This is the form element for the address -->
-                    <div class="field">
-                        <label class="label is-underlined">Address</label>
-                        <div class="control has-icons-left has-icons-right">
-                            <input class="input is-info" type="text" placeholder="E.g 112 Main St E, Toronto">
-                            <span class="icon is-small is-left">
-                                <i class="fa fa-home"></i>
-                            </span>
-                            <span class="icon is-small is-right">
-                                <i class="fa fa-check"></i>
-                            </span>
-                            <!-- This is the form element for the Postal Code -->
+                        <!-- This is the form element for the address -->
+                        <div class="field">
+                            <label class="label is-underlined">Address</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-info" type="text" placeholder="E.g 112 Main St E, Toronto">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-home"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                                <!-- This is the form element for the Postal Code -->
 
-                            <div class="field">
-                                <label class="label is-underlined">Postal Code</label>
-                                <div class="control has-icons-left has-icons-right">
-                                    <input class="input is-info" type="text" placeholder="E.g A1B C2D">
-                                    <span class="icon is-small is-left">
-                                        <i class="fa fa-map"></i>
-                                    </span>
-                                    <span class="icon is-small is-right">
-                                        <i class="fa fa-check"></i>
-                                    </span>
+                                <div class="field">
+                                    <label class="label is-underlined">Postal Code</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-info" type="text" placeholder="E.g A1B C2D">
+                                        <span class="icon is-small is-left">
+                                            <i class="fa fa-map"></i>
+                                        </span>
+                                        <span class="icon is-small is-right">
+                                            <i class="fa fa-check"></i>
+                                        </span>
 
-                                    <!-- This is the confirm and save button -->
+                                        <!-- This is the confirm and save button -->
+                                    </div>
                                 </div>
-                            </div>
-                            <button class="button is-primary">Confirm & Save</button>
-        </form>
+                                <button class="button is-primary">Confirm & Save</button>
+            </form>
+        </div>
     </div>
 
 
