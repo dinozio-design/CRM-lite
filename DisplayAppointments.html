@@ -15,17 +15,18 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="section is-fullheight-with-navbar block">
-        <div class="hero-head has-shadow ">
-            <nav class="navbar card">
-                <div class="container ">
-                    <div class="navbar-brand ">
-                        <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
 
-                        <figure class="image  is-96x96">
-                            <img src="./assets/images/logo.png">
-                        </figure>
+<!-- Header with a nav-bar-->
+<header class="section is-fullheight-with-navbar block">
+    <div class="hero-head has-shadow ">
+        <nav class="navbar card">
+            <div class="container ">
+            <div class="navbar-brand ">
+                <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
+
+                <figure class="image  is-96x96">
+                    <img src="./assets/images/logo.png">
+                </figure>
                         <span class="navbar-burger" aria-label="menu" data-target="navbarMenu">
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
@@ -39,87 +40,91 @@
                                     <i class="fas fa-home"></i>
                                 </span>
                             </span>
-                            <a class="navbar-item is-active " href="index.html" aria-current="page">Home</a>
-                            <a class="navbar-item has-text-link" href="#">About us</a>
-
-                            <a class="navbar-item has-text-link" href="#">New Appointment</a>
-
-                            <a class="navbar-item has-text-link" href="#">Pricing</a>
-
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#">About us</a>
+                            <a class="navbar-item has-text-weight-semibold is-active" href="#rightDisplay" aria-current="page">Appointments</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#">Pricing</a>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-  <div class="section">
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- Displays image  -->
+<div class="section">
     <figure class="image">
         <img src="./assets/images/lawn2.jpg">
     </figure>
-  </div>
+</div>
 
+<!-- This is the Banner (yellow) -->
+<section class="hero is-warning">
+    <div class="hero-body has-background-warning-light">
+        <p class="title has-text-weight-bold is-italic">Appointments</p>
     </div>
-    <!-- This is the Banner (yellow) -->
-    <section class="hero is-warning">
-        <div class="hero-body has-background-warning-light">
-            <p class="title">
-             Appointments
-            </p>
-        </div>
-    </section>
-    <div id="rightDisplay" class="tile is-parent is-vertical">
+</section>
+
+<!-- This section of code renders the list of all Appointments from local storage -->
+<div id="rightDisplay" class="tile is-parent is-vertical">
     <article class="tile is-child notification is-info">
         <p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p>
         <p>${apptInfo[i].address}, ${apptInfo[i].city}, ${apptInfo[i].prov} | Phone: ${apptInfo[i].phone}<span> icons</span>
         </p>
     </article>
 </div>
-    <div class="space"></div>
 
-    <div class="hero body">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-two-fifths">
-                    <img class="space2 " src="./assets/images/logo.png">
-                </div>
-                <div class="column is-one-third ">
-                    <div class="container has-text-danger-dark">
-                        <ul>
-                            <li><a class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i>
-                                    LinkedIn</a> </li>
-                            <li><a href="" class="has-text-danger-dark"><i class="fab fa-twitter  has-text-link"></i>
-                                    Twitter</a></li>
-                            <li><a href="" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i>
-                                    GitHUb</a></li>
-                            <li><a href="" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i>
-                                    Facebook</a></li>
-                            <li><a href="" class="has-text-danger-dark"><i
-                                        class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column is-one-third ">
-                    <div class="container has-text-danger-dark">
-                        <ul>
-                            <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
-                            <li><a href="" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
-                            <li><a href="" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
-                            <li><a href="" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
-                            <li><a href="" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+ <div class="space"></div>
+
+<!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
+<div class="hero body">
+    <div class="container">
+    <div class="columns is-vcentered">
+        <!-- column1 -->
+        <div class="column is-two-fifths">
+            <img class="space2 " src="./assets/images/logo.png">
+        </div>
+        
+        <!-- column2 -->
+        <div class="column is-one-third ">
+        <div class="container has-text-danger-dark">
+            <ul>
+                <li><a href="" class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
+                <li><a href="" class="has-text-danger-dark"><i class="fa fa-phone has-text-link"></i> Twitter</a></li>
+                <li><a href="" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
+                <li><a href="" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
+                <li><a href="" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
+              </ul>
+        </div>
+        </div>
+
+        <!-- column3 -->
+        <div class="column is-one-third ">
+        <div class="container has-text-danger-dark">
+            <ul>
+                <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
+                <li><a href="" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
+                <li><a href="" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
+                <li><a href="" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
+                <li><a href="" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
+            </ul>
+        </div>
         </div>
     </div>
-    <div class="space"></div>
-    <footer class="has-background-dark has-text-centered has-text-white py-6">
+    </div>
+</div>
 
-        <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>
-    </footer>
+<div class="space"></div>
 
-    <script src="./assets/scripts/samscript.js"></script>
+<!-- footer section -->
+<footer class="has-background-dark has-text-centered has-text-white py-6">
+    <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>
+</footer>
+
+<script src="./assets/scripts/samscript.js"></script>
+
 </body>
-
 </html>
 
