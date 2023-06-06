@@ -76,7 +76,8 @@ https://dinozio-design.github.io/CRM-lite/
 2. You can find the URL of our GitHub repository that contains this code here:<br>
 https://github.com/dinozio-design/CRM-lite
 
-
+## License
+MIT License
 
 ## References
 We used files and resources provided by BCS : GitLab repo UTOR-VIRT-FSF-PT-04-2023-U-LOLC
