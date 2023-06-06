@@ -6,12 +6,8 @@
 
 In this group project we have created a web application from scratch! 
 
-A CRM-lite for a `<specific client>` in a `<specific industry>` in order to automate and organize their project portfolios, create adhoc projects, fill out forms for project details, generate form results in pdf files, and take/upload pictures `[to google drive perhaps]`.
-
-This app uses 3rd party API's such as google drive, google calendar, google maps, as well as the weather forecast APIs. 
-
-
-This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code that we wrote and polished `[ehem! debuged]` as a team. It has a clean, polished, and responsive user interface. 
+A CRM-lite is a  Green Grass Lawn Care Services for customer to book appoitmnent in order to have fastest lawn services and  provide excellent customer lawn care services experience. This app uses 3rd party API's such Weather API and Canadian holiday api
+his app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code that we wrote and polished together as a team. It has a clean, polished, and responsive user interface. 
 
 Way to go TEAM 4 🙏👍
 
@@ -31,10 +27,9 @@ write the elevator pitch here
 
 ```
 USER STORY:
-As a service-provider [lawn mowing service] 
-I WANT to be able to create new projects with customer information such as location [address] time-slot and dat of appointment, as well as local weather forecast. 
-SO THAT I can have quick access to all projects organized in a manner to be delivered according to the date and time. 
-And I can see the list of projects and go to my scheduled appointment on time and at the correct address!
+As a  Green Grass Lawn Care Services
+I WANT to be able to create new appointments with customer information such as location [address] time-slot and dat of appointment, as well as local weather forecast. 
+SO THAT I can have quick access to all appointments organized in a manner to be delivered according to the date and time. And I can see the list of appointments and go to my scheduled appointment on time and at the correct address!
 ```
 
 
@@ -42,17 +37,24 @@ And I can see the list of projects and go to my scheduled appointment on time an
 
 ```
 GIVEN a CRM app with project management
-WHEN I click new project button
+WHEN I click add new appointment button
 THEN I am presented with the form elements on the right side of the page
-WHEN I see the form elements
-THEN I can interact with them and input the information for new project
+WHEN I see the form page displays
+THEN I can interact with them and input the information for new appointment
 WHEN I click Confirm and save button
-THEN the project information is saved [local storage or other servers such as google drive]
+THEN I will displays with weather information
+WHEN I choose appointment date on Canadian Fedral Holidays 
+THEN I will displays wih the mssg that It is a Holiday
+WHEN I click Confirm and save button
+THEN the appointment information is saved to local storage 
 WHEN I open Show all appointments page
-THEN I am presented with the project details [such as address, date, time, etc.]
-WHEN I am presented with the peoject details, 
-THEN I can also see the weather forecast for that project address.
-
+THEN I am presented with the appointment details [such as address, date, time, etc.]
+WHEN I am presented with the appointment details, 
+THEN I can also see the weather forecast for that appointment address.
+WHEN I click About us  
+THEN I will directed to About us Information
+WHEN I click Contact 
+THEN I will directed to Contact Information
 ```
 
 
