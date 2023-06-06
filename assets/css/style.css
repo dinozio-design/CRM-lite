@@ -3,30 +3,10 @@
     background-color: a;
     padding: 0;
 }
-
-
-header,
-footer {
-    height: 60px;
-    width: 100%;
-    line-height: 70px;
-    background-color: #266150;
-}
-
-header {
-    border-bottom: beige solid 70px;
-}
-
-footer {
-    position: absolute;
-bottom: 0%;
-}
-
 .container {
     display: flex;
     justify-content: center;
 }
-
 .container1 {
     height: 200px;
      display: flex;
@@ -34,58 +14,53 @@ bottom: 0%;
      margin-top:50px ;
      justify-content: space-between;
 }
-
-.Header {
-    font-size: 50px;
-    color: whitesmoke;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .left-section, .right-section {
     border: 4px solid #266150;
 }
-
 .left-section {
     height: 65vh;
-    width: 25vh;
+  
     padding: 10px;
     margin-left: 10%;
 }
-
 .right-section {
     height: 65vh;
-    width:75vh ;
+  
     padding: 10px;
     margin-right: 10%;
-    
 }
 
-/*.appointment1:hover {
-    background-color: burlywood;
-    color: aliceblue;
+.space {
+    height: 30px;;
+}
+.space2{
+    border-right: 4px solid black;
+}
+#appointInfo {
+    color: red;
+    font-style: italic;
+    position: relative;
+    top:20%;
+}
+.userInput {
+    height: 600px;
+    border-style: inset;
 }
 
-
-.appointment2:hover {
-background-color: burlywood;
-color: aliceblue;
+.title.is-2 {
+    font-size: 2.5rem;
+    margin-top: 20px;
 }
 
-.appointment1 {
-    height: 40px;
-    padding:10px 20px;
-    border-style: unset;
-    margin-bottom: 10px;
-  
+#aboutus{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
 }
 
+#banner{
+    background-color:darkseagreen;
+}
 
-.appointment2 {
-    height: 40px;
-    padding:10px 20px;
-    border-style: unset;
-}*/
-
-#space {
-    height: 20px;;
+#appoint{
+    background-color: gainsboro;
 }
