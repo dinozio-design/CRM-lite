@@ -18,7 +18,7 @@ Way to go TEAM 4 🙏👍
 
 
 # Group Project 1 - Group #4 | Interactive Front-End Application
-### From Scratch â€” to build a CRM-lite
+### From Scratch  to build a CRM-lite
 <br>
 
 
@@ -80,12 +80,17 @@ https://github.com/dinozio-design/CRM-lite
 
 ## References
 We used files and resources provided by BCS : GitLab repo UTOR-VIRT-FSF-PT-04-2023-U-LOLC
-
+We used OpenWeatherMap to fetch weather api ,You can find it here:<br>
+https://openweathermap.org/
+We used Canadian Holidays API website to fetch Canadian Fedral Holidays ,You can find it here:<br>
+https://canada-holidays.ca/api
+We used CSS framework:Bulma ,You can find it here:<br>
+https://bulma.io/
 
 - - -
 
 
 ### Authors Notes:<br>
-_This README and accompanying repo have been brought to you by:Rajni Bala,Vithusan Uruthirakumaran,Alekhya vinni,Sam<br>
+_This README and accompanying repo have been brought to you by:Rajni Bala<br>Saeid Azimi-Moghadam<br>Vithusan Uruthirakumaran<br>Alekhya erikipati<br>
 Â© Group 4- 2023 CodeCamp Studens.<br> 
 Confidential and Proprietary. All Rights Reserved.
