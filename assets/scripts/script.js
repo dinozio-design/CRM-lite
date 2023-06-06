@@ -60,5 +60,9 @@ var APIkey = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + 
 
 
 
+
+API Key
+13727e15-3698-4029-9d93-af843258ebd2
+
    
   
