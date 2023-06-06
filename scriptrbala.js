@@ -66,3 +66,32 @@ function weatherForecast(searchCity) {
 
     });
 }
+
+ // gets the date of the appointment as an argument
+ function canadianholidays(apptDate) {
+  // date is 2023-05-05
+  var dateYear = apptDate.split("-");
+  var apiURL = `https://canada-holidays.ca/api/v1/holidays?year=${dateYear[0]}&`;
+  fetch(apiURL)
+    .then(function (response) {
+      // checks if the response is ok (200) from server
+      if (response.ok) {
+        response.json().then(function (data) {
+          console.log(data);
+          for (var i = 0; i < data.holidays.length; i++) {
+            var offDay = data.holidays[i];
+            if (offDay.federal === 1 && offDay.date === apptDate) {
+              CanadianFedralHoliday.append("this is the Federal Holiday data    ", offDay.date, "   ", offDay.nameEn);
+              
+              console.log("this is the Federal Holiday data    ", offDay.date, "   ", offDay.nameEn);
+
+              // at this point the method will return the offDay object to the caller
+            };
+          };
+          // console.log(data.holidays.length);
+        });
+      } 
+    })
+   
+}
+});
