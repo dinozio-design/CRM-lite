@@ -13,7 +13,18 @@ confirmAppointment.on("click",function(){
   //get value in input search value
   var searchCity = enterCityName.val();
   enterCityName.val(" ");
-  
+  var date = DateofAppointment.val();
+  console.log("this is Customer Input date", date);
   weatherForecast(searchCity);
-  canadianholidays();
+  canadianholidays(date);
+});
+
+//The keypress event is fired when a key that produces a character value is pressed down.
+confirmAppointment.keypress(function (event) {
+  var keycode = (event.keycode ? event.keycode : event.which);
+  if (keycode === 13) {
+
+    weatherForecast(searchCity);
+    canadianholidays(date);
+  }
 });
