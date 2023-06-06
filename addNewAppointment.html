@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>
     <title>CRM Lite - Add new Appointment</title>
 </head>
+
 <body>
     <!-- Header -->
-    <header class="section is-fullheight-with-navbar block" >
+    <header class="section is-fullheight-with-navbar block">
         <div class="hero-head has-shadow ">
             <nav class="navbar card">
                 <div class="container">
@@ -35,9 +37,12 @@
                                 </span>
                             </span>
                             <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/underConstruction.html">About us</a>
-                            <a class="navbar-item has-text-weight-semibold is-active" href="#rightDisplay" aria-current="page">Appointments</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/priceUnderConstruct.html">Pricing</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold"
+                                href="./Under Construction/underConstruction.html">About us</a>
+                            <a class="navbar-item has-text-weight-semibold is-active" href="#rightDisplay"
+                                aria-current="page">Appointments</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold"
+                                href="./Under Construction/priceUnderConstruct.html">Pricing</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +74,7 @@
         <div class="field">
             <label class="label is-underlined">Full Name</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="Full Name" required>
+                <input class="input is-success" type="text" placeholder="Full Name">
                 <span class="icon is-small is-left">
                     <i class="fa fa-user"></i>
                 </span>
@@ -79,12 +84,12 @@
             </div>
             <p class="help is-success">Enter your First and Last name</p>
         </div>
-    
+
         <!-- This is the form element for email -->
         <div class="field">
             <label class="label is-underlined">Email</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-info" type="email" placeholder="Email input" required>
+                <input class="input is-info" type="email" placeholder="Email input">
                 <span class="icon is-small is-left">
                     <i class="fa fa-envelope"></i>
                 </span>
@@ -98,7 +103,7 @@
         <div class="field">
             <label class="label is-underlined">Phone Number</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="tel" placeholder="Phone Number" required>
+                <input class="input is-danger" type="tel" placeholder="Phone Number">
                 <span class="icon is-small is-left">
                     <i class="fa fa-phone"></i>
                 </span>
@@ -108,7 +113,7 @@
             </div>
             <p class="help is-danger">This is a required!</p>
         </div>
-        
+
         <!-- This is the form element for the address -->
         <div class="field">
             <label class="label is-underlined">Address</label>
@@ -116,7 +121,7 @@
                 <input class="input is-info" type="text" id="address" placeholder="E.g 112 Main St E, Toronto">
                 <span class="icon is-small is-left">
                     <i class="fa fa-home"></i>
-                </span>  
+                </span>
                 <span class="icon is-small is-right">
                     <i class="fa fa-check"></i>
                 </span>
@@ -132,57 +137,57 @@
                             <i class="fa fa-check"></i>
                         </span>
                         <p class="help is-danger">This is a required!</p>
-                        
+
                         <!-- This is the form element for the Postal Code -->
-                        
+
                         <div class="field">
                             <label class="label is-underlined">Postal Code</label>
                             <div class="control has-icons-left has-icons-right">
                                 <input class="input is-info" type="text" id="postalCode" placeholder="E.g A1B C2D">
                                 <span class="icon is-small is-left">
                                     <i class="fa fa-map"></i>
-                                </span>  
+                                </span>
                                 <span class="icon is-small is-right">
                                     <i class="fa fa-check"></i>
                                 </span>
                             </div>
                         </div>
-                        
-                        
+
+
                         <!-- This is the form element for appointment date -->
                         <div class="field">
                             <label class="label is-underlined">Appointment Date</label>
                             <div class="control">
-                                <input class="input is-link is-danger" id="Date-of-Appointment" type="date" required>
+                                <input class="input is-link is-danger" id="Date-of-Appointment" type="date">
                                 <p class="help is-danger">This is a required!</p>
                             </div>
                         </div>
-                        
+
                         <!-- This is the form element for appointment time -->
                         <div class="field">
                             <label class="label is-underlined">Appointment Time</label>
                             <div class="control">
-                <input class="input is-link" type="time" required>
-            </div>
-        </div>
-        
-        <!-- This is the form element for the message -->
-        <div class="field">
-            <label class="label is-underlined">Message</label>
-            <div class="control">
-                <textarea class="textarea" placeholder="Message" required></textarea>
-            </div>
-        </div>
-        
-        <!-- This is the form element for the submit button -->
-        <div class="field is-grouped">
-            <div class="control">
-                <button class="button is-link" type="submit" id="confirm">Submit</button>
-            </div>
-            <div class="control">
-                <button class="button is-link is-light" type="reset">Clear</button>
-            </div>
-        </div>
+                                <input class="input is-link" type="time">
+                            </div>
+                        </div>
+
+                        <!-- This is the form element for the message -->
+                        <div class="field">
+                            <label class="label is-underlined">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- This is the form element for the submit button -->
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link" type="submit" id="confirm">Submit</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link is-light" type="reset">Clear</button>
+                            </div>
+                        </div>
     </form>
 
     <!-- This is the modal code -->
@@ -197,45 +202,58 @@
                 <p>Your appointment has been confirmed. Thank you!</p>
             </section>
             <footer class="modal-card-foot">
-                <button class="button is-success">OK</button>
+                <!-- <button class="button is-success"><a href="./DisplayAppointments.html"></a> OK</button> -->
             </footer>
         </div>
     </div>
 
     <div class="space"></div>
     <div class="hero body">
-    <div class="container">
-    <div class="columns is-vcentered">
-   <div  class="column is-two-fifths" >
-    <img  class="space2 "src="./assets/images/logo.png">
-   </div>
-<div class="column is-one-third ">
-    <div class="container has-text-danger-dark">
-       <ul >
-           <li><a class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
-           <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-twitter  has-text-link"></i> Twitter</a></li>
-           <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
-           <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
-           <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
-       </ul>
-    </div> 
-  </div>
-<div class="column is-one-third ">
-    <div class="container has-text-danger-dark">
-       <ul >
-           <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
-           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
-           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
-           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
-           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
-       </ul>
-    </div> 
-  </div>
-      <div class="space"></div>
-      <footer class="has-background-dark has-text-centered has-text-white py-6">
-          <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>    
-      </footer>
-          <!-- This is the script to show and hide the modal -->
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-two-fifths">
+                    <img class="space2 " src="./assets/images/logo.png">
+                </div>
+                <div class="column is-one-third ">
+                    <div class="container has-text-danger-dark">
+                        <ul>
+                            <li><a class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i>
+                                    LinkedIn</a> </li>
+                            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i
+                                        class="fab fa-twitter  has-text-link"></i> Twitter</a></li>
+                            <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-danger-dark"><i
+                                        class="fab fa-github has-text-black"></i> GitHUb</a></li>
+                            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i
+                                        class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
+                            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i
+                                        class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column is-one-third ">
+                    <div class="container has-text-danger-dark">
+                        <ul>
+                            <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Privacy</a></li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="has-background-dark has-text-centered has-text-white py-6">
+        <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>
+    </footer>
+    <!-- This is the script to show and hide the modal -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const modal = document.querySelector('.modal');
@@ -253,4 +271,5 @@
         });
     </script>
 </body>
+
 </html>
