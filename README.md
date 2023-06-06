@@ -40,11 +40,18 @@ And I can see the list of projects and go to my scheduled appointment on time an
 
 ## Acceptance Criteria
 
-TBD
-
 ```
-
-tbd
+GIVEN a CRM app with project management
+WHEN I click new project button
+THEN I am presented with the form elements on the right side of the page
+WHEN I see the form elements
+THEN I can interact with them and input the information for new project
+WHEN I click Confirm and save button
+THEN the project information is saved [local storage or other servers such as google drive]
+WHEN I open Show all appointments page
+THEN I am presented with the project details [such as address, date, time, etc.]
+WHEN I am presented with the peoject details, 
+THEN I can also see the weather forecast for that project address.
 
 ```
 
@@ -53,7 +60,7 @@ tbd
 
 The following animation shows the web application's appearance and functionality:
 
-![App demo](./Assets/Images/#)
+<img src="mockup.png" alt="mockup-img">
 
 
 ## Our Work
@@ -62,9 +69,12 @@ and talk about the work breakdown, who did what, etc
 add pictures of canban, etc.
 
 
-1. You can find the URL of our deployed application **here:** <br>[NAME - link](https://dinozio-design.github.io/CRM-lite)
+1. You can find the URL of our deployed application here:<br>
+https://dinozio-design.github.io/CRM-lite/
 
-2. You can find the URL of our GitHub repository that contains this code **here:** <br>[GitHub Repo - link](https://github.com/dinozio-design/CRM-lite.git)
+
+2. You can find the URL of our GitHub repository that contains this code here:<br>
+
 
 
 ## References
