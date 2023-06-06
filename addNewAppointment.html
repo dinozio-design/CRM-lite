@@ -46,16 +46,15 @@
     </div>
     </header>
     <!-- This is the appointment image -->
-    <div class="hero-body">
+     <div class="section">
         <div class="container">
         <img src="./assets/images/business.jpg" alt="">
-
         </div>
-
     </div>
+    
 <!-- This is the Banner (yellow) -->
-    <section class="hero is-warning">
-        <div class="hero-body has-background-warning-light">
+    <section class="hero is-warning is-small">
+        <div class="hero-body has-background-warning-light is-small">
           <p class="title">
             Appointment Booking
           </p>
@@ -66,7 +65,8 @@
       </section>
 
 <!-- This is the right hand side box, that will have the form elements -->
-       <form class="box column is-two-quarters mx-2">
+<div class="column is-three-quarters mx-2">    
+<form class="is-vcentered" >
 <!-- This is the form element for full name -->
 <!-- Want to add a function in which the check icon turns green when a value is inputted -->
             <div class="field">
@@ -111,7 +111,7 @@
         <span class="icon is-small is-right">
             <i class="fa fa-check"></i>
         </span>
-
+        </div>
 
 <!-- This is the form element for the Date -->
         <div class="field">
@@ -123,18 +123,44 @@
     
 <!-- This is the form element for the dropdown BUT THE BUTTON IS NOT WORKING -->
         <div class="field">
+            <div class="control mb-2">
             <label class="label is-underlined"> Time-slot </label>
-            <div class="dropdown">
+            <div class="select">
+            <select name="drop-down" id="dropdownmenu">
+                <option value="8am">8:00 am</option>
+                <option value="8:30am">8:30 am</option>
+                <option value="9:00am">9:00 am</option>
+                <option value="9:30am">9:30 am</option>
+                <option value="10am">10:00 am</option>
+                <option value="10:30am">10:30 am</option>
+                <option value="11am">11:00 am</option>
+                <option value="11:30am">11:30 am</option>
+                <option value="12pm">12:00 pm</option>
+                <option value="12:30pm">12:30 pm</option>
+                <option value="1pm">1:00 pm</option>
+                <option value="1:30pm">1:30 pm</option>
+                <option value="2pm">2:00 pm</option>
+                <option value="2:30pm">2:30 pm</option>
+                <option value="3pm">3:00 pm</option>
+                <option value="3:30pm">3:30 pm</option>
+                <option value="4pm">4:00 pm</option>
+                <option value="4:30pm">4:30 pm</option>
+            </select>
+            </div>
+        </div>
+    </div>
+            <!-- <div class="dropdown is-hoverable">
                 <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" role="menu">
-                        <span> Dropdown button </span>
-                        <span class="icon is-small"></span>
-                        <i class="fas fa-angle-down mx-3" aria-hidden="true"></i>
-                    </button>
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>Click me</span>
+                    <span class="icon is-small">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
                 </div>
-
                 <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div class="dropdown-content">
+                  <div class="dropdown-content">
+                    <div class="select">
                         <a href="" class="dropdown-item">
                         8:00  am 
                         </a>
@@ -191,8 +217,10 @@
                         </a>
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
+       -->
+       
 <!-- This is the form element for the address -->
 <div class="field">
     <label class="label is-underlined">Address</label>
@@ -204,6 +232,8 @@
   <span class="icon is-small is-right">
       <i class="fa fa-check"></i>
   </span>
+  </div>
+  </div>
 <!-- This is the form element for the Postal Code -->
 
 <div class="field">
@@ -216,15 +246,16 @@
   <span class="icon is-small is-right">
       <i class="fa fa-check"></i>
   </span>
-
-<!-- This is the confirm and save button -->
         </div>
         </div>
-        <button class="button is-primary">Confirm & Save</button>
-      </form>
-      </div>
 
-
+ <!-- This is the confirm and save button -->
+        <button class="button is-primary">Confirm & Save</button> 
+    </form>
+</div>  
+</div>
+</div>
+</div>
     <div class="space"></div>
 
     <div class="hero body">

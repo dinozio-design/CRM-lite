@@ -11,7 +11,7 @@
     <script defer src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="./assets/scripts/samscript.js"></script>
-    <title>CRM Lite</title>
+    <title>CRM Lite-DisplayAppointments</title>
 </head>
 
 <body>
@@ -60,14 +60,15 @@
     </figure>
 </div>
 
-<!-- This is the Banner (yellow) -->
-<section class="hero is-warning">
-    <div class="hero-body has-background-warning-light">
-        <p class="title has-text-weight-bold is-italic">Appointments</p>
+<!-- This is the Banner -->
+<section class="hero is-small" id="appoint">
+    <div class="hero-body ">
+        <p class="title has-text-weight-bold is-italic ml-5">Appointments</p>
     </div>
 </section>
 
 <!-- This section of code renders the list of all Appointments from local storage -->
+<div class="section">
 <div id="rightDisplay" class="tile is-parent is-vertical">
     <article class="tile is-child notification is-info">
         <p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p>
@@ -75,8 +76,10 @@
         </p>
     </article>
 </div>
+</div>
 
- <div class="space"></div>
+
+<div class="space"></div>
 
 <!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
 <div class="hero body">

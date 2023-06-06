@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script defer src="./assets/scripts/samscript.js"></script>
+    <script defer src="./assets/scripts/navbar.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>CRM Lite</title>
 </head>
 <body>
@@ -23,11 +26,11 @@
                 <figure class="image  is-96x96">
                     <img  src="./assets/images/logo.png">
                 </figure>
-                <span  class="navbar-burger" aria-label="menu"  data-target="navbarMenu">
+                <a  role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
-                </span>
+                </a>
                   </div>
                 <div id="navbarMenu" class="navbar-menu " >
                     <div class="navbar-end">
@@ -36,10 +39,10 @@
                                 <i class="fa fa-home"></i>
                             </span>
                         </span>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/underConstruction.html">About us</a>
-                            <a class="navbar-item has-text-weight-semibold is-active" href="#rightDisplay" aria-current="page">Appointments</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/priceUnderConstruct.html">Pricing</a>
+                            <a class="navbar-item  has-text-weight-semibold is-active" href="index.html">Home</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#aboutus">About us</a>
+                            <a class="navbar-item has-text-weight-semibold  has-text-link" href="#rightDisplay" aria-current="page">Appointments</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#contact-info">ContactUs</a>
                     </div>
                 </div>
          </div>
@@ -54,9 +57,9 @@
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column is-one-third">
-                    <p class="title is-1 is-italic">A beautiful Lawn doesn't happen by itself!
+                    <p class="title is-1 is-italic has-text-danger-dark">A beautiful Lawn doesn't happen by itself!
                     </p>
-                    <p class="subtitle has-text-success-dark is-italic mt-3">-Green Grass is here for you always</p>
+                    <p class="subtitle has-text-weight-semibold is-italic mt-3">-Green Grass is here for you always</p>
                 </div>
                 <div class="column is-two-thirds">
                     <img src="./assets/images/mowing.png" alt="logo">
@@ -64,15 +67,14 @@
             </div>
         </div>
     </div>
-    <section class="hero is-warning">
-        <div class="hero-body has-background-dark">
-          <p class="title has-text-white">
+
+<!-- This section/block acts as the header to  Managing appointments section-->
+<section class="hero  is-small" id="banner">
+    <div class="hero-body"> 
+        <p class="title has-text-white is-italic">
             Manage Appointments:</p>
-          <p class="subtitle has-text-white">
-            Choose to make an appointment or Show all appointments already made..
-          </p>
-        </div>
-      </section>
+    </div>
+</section>
 <div class="level-left">
     <div class="card column ">
         <div class="card-content">
@@ -89,10 +91,25 @@
 
 <div class="space"></div>
 
+<div class="section">
+<div class="content">
+        <h2 id="aboutus" class="title is-italic has-text-warning-dark">About Us</h2>
+        <p class="is-italic has-text-black-bis">Our mission
+            is, and always has been, to provide homeowners with the best quality lawn care at the most affordable price.
+            At GreenGrassLawn Services, we prioritize both the health of your lawn and the prosperity of your wallet. 
+            With our tailored fertilizer blends and top-notch Certified Premium Grade-A grass seed, we ensure that our customers
+            receive nothing but the finest quality. Our dedication is further amplified by our state-of-the-art commercial application
+            equipment and a highly skilled team, guaranteeing a vibrant and verdant lawn every time.
+        </p>
+</div>
+</div>
+ 
+  
+   
 
 
 <!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
-    <div class="hero body">
+    <div class="hero body" id="contact-info">
     <div class="container">
     <div class="columns is-vcentered">
         <!-- column1 -->
