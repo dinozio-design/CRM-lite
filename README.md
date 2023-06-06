@@ -6,7 +6,7 @@
 
 In this group project we have created a web application from scratch! 
 
-A CRM-lite is a  Green Grass Lawn Care Services for customer to book appoitmnent in order to have fastest lawn services and  provide excellent customer lawn care services experience. This app uses 3rd party API's such Weather API and Canadian holiday api.This API is used to check if weather is sunny on appoitment date and Canadian Holiday is used to check to make sure there is no Canadian Fedral Holiday on the day of appointment because we are off that day
+A CRM-lite is a  Green Grass Lawn Care Services for employees to book appointment in order to have fastest lawn services and  provide excellent customer lawn care services experience. This app uses 3rd party API's such Weather API and Canadian holiday api.This API is used to check if weather is sunny on appoitment date and Canadian Holiday is used to check to make sure there is no Canadian Fedral Holiday on the day of appointment because we are off that day
 his app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code that we wrote and polished together as a team. It has a clean, polished, and responsive user interface. 
 
 Way to go TEAM 4 🙏👍
@@ -26,14 +26,14 @@ SO THAT I can have quick access to all appointments organized in a manner to be 
 ```
 GIVEN a CRM app with project management
 WHEN I click add new appointment button
-THEN I am presented with the form elements on the right side of the page
+THEN I am presented with new appointment page
 WHEN I see the form page displays
 THEN I can interact with them and input the information for new appointment
-WHEN I click Confirm and save button
+WHEN I click Confirm  button
 THEN I will displays with weather information
 WHEN I choose appointment date on Canadian Fedral Holidays 
-THEN I will displays wih the mssg that It is a Holiday
-WHEN I click Confirm and save button
+THEN I will displays wih the message that It is a Canadian Fedral Holiday
+WHEN I click Confirm button
 THEN the appointment information is saved to local storage 
 WHEN I open Show all appointments page
 THEN I am presented with the appointment details [such as address, date, time, etc.]
@@ -46,7 +46,7 @@ THEN I will directed to Contact Information
 ```
 
 
-## Images of Our App
+## Mockup
 
 The following animation shows the web application's appearance and functionality:
 
@@ -55,14 +55,15 @@ The following animation shows the web application's appearance and functionality
 
 ## Our Work
 We have great Experience working together in a team .Great Team
-Here is a breakdown our CRM-lite app:<br>
-HTML framework for all the pages has been presented by <span> Vithusan Uruthirakumaran</span> <br>
-CSS styling,CSS framework:Bulma ,and also rendering information to display on html pages has been presented by<span> Alekhya erikipati</span>
-Fetching Weather api and also Canadian Fedral Holidays are presented by <span> Rajni bala</span>
-Storing Project details in local storage is presented by <span>Saeid Azimi-Moghadam</span><br>
-Presentation is been created by <span> Vithusan Uruthirakumaran</span>  and <span> Alekhya erikipati</span><br>
-Stitch different files to ones has been doe by <span>Saeid Azimi-Moghadam</span><br>
-README file has been created by <span> Rajni bala</span><br>
+Here is a breakdown for our CRM-lite app:<br>
+HTML framework for all the pages has been presented by : Vithusan Uruthirakumaran <br>
+CSS styling,CSS framework:Bulma ,and also rendering information to display on html pages has been presented by Alekhya erikipati<br>
+Fetching Weather api and also Canadian Fedral Holidays are presented by  Rajni bala<br>
+Storing Project details in local storage is presented by Saeid Azimi-Moghadam <br>
+Presentation is been created by  Vithusan Uruthirakumaran and  Alekhya erikipati<br>
+Stitch different files to ones has been doe by Saeid Azimi-Moghadam<br>
+README file has been created by  Rajni bala<br>
+
 ## Deployed Application:
 1. You can find the URL of our deployed application here:<br>
 https://dinozio-design.github.io/CRM-lite/
@@ -87,6 +88,7 @@ https://bulma.io/
 
 
 ### Authors Notes:<br>
-_This README and accompanying repo have been brought to you by:Rajni Bala<br>Saeid Azimi-Moghadam<br>Vithusan Uruthirakumaran<br>Alekhya erikipati<br>
+_This README and accompanying repo have been brought to you by:<br>
+Rajni Bala<br>Saeid Azimi-Moghadam<br>Vithusan Uruthirakumaran<br>Alekhya erikipati<br>
 Â© Group 4- 2023 CodeCamp Studens.<br> 
 Confidential and Proprietary. All Rights Reserved.
