@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script defer src="./assets/scripts/samscript.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>CRM Lite</title>
 </head>
 
@@ -25,13 +27,13 @@
                 <figure class="image  is-96x96">
                     <img  src="./assets/images/logo.png">
                 </figure>
-                <span  class="navbar-burger" aria-label="menu"  data-target="navbarMenu">
+                <a  role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
-                </span>
+                </a>
                   </div>
-            <div id="navbarMenu" class="navbar-menu " >
+            <div id="navMenu" class="navbar-menu " >
                 <div class="navbar-end">
                     <span class="navbar-item">
                     <span class="icon has-text-danger-dark">
@@ -57,7 +59,7 @@
     <div class="columns is-vcentered">
         <div class="column is-one-third">
             <p class="title is-1 is-italic">A beautiful Lawn doesn't happen by itself!</p>
-            <p class="subtitle has-text-success-dark is-italic mt-3">-Green Grass is here for you always</p>
+            <p class="subtitle has-text-danger-dark is-italic mt-3">-Green Grass is here for you always</p>
         </div>
         <div class="column is-two-thirds">
             <img src="./assets/images/mowing.png" alt="logo">
@@ -82,9 +84,9 @@
 
 <div class="space"></div>
 
-<!-- This section of code displays two buttons which leads to two different html pages 1.to dispay all apooinments 2.To add a new appoinment -->
+<!-- This section of code displays two buttons which leads to two different html pages 1.to dispay all apointments 2.To add a new appoinment -->
 <div class="is-centered" id="appointments">
-    <div class="card column ">
+    <div class="card">
     <div class="card-content">
         <div class="content">
             <div class="column buttons are-medium">
@@ -99,11 +101,26 @@
 
 <div class="space"></div>
 
+<!-- <div class="card">
+   <div class="card-header">
+    <div class="card-header-title"> -->
+        <div class="content">
+        <h2 id="aboutus" class="title is-italic">About Us</h2>
+    
+        <p>Our mission
+            is, and always has been, to provide homeowners with the best quality lawn care at the most affordable price.
+            At GreenLawn Solutions, we prioritize both the health of your lawn and the prosperity of your wallet. 
+            With our tailored fertilizer blends and top-notch Certified Premium Grade-A grass seed, we ensure that our customers
+            receive nothing but the finest quality. Our dedication is further amplified by our state-of-the-art commercial application
+            equipment and a highly skilled team, guaranteeing a vibrant and verdant lawn every time.
+        </p>
+    </div>
+   
 
 
 <!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
-<div class="hero body">
-<div class="container">
+<div class="card">
+<div class="card-content">
     <div class="columns is-vcentered">
         <!-- column1 -->
         <div  class="column is-one-third" >
