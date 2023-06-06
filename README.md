@@ -14,7 +14,7 @@ Way to go TEAM 4 🙏👍
 ## User Story
 
 ```
-USER STORY:
+
 As a  Green Grass Lawn Care Services
 I WANT to be able to create new appointments with customer information such as location [address] time-slot and dat of appointment, as well as local weather forecast. 
 SO THAT I can have quick access to all appointments organized in a manner to be delivered according to the date and time. And I can see the list of appointments and go to my scheduled appointment on time and at the correct address!
