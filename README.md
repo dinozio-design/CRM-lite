@@ -74,6 +74,7 @@ https://dinozio-design.github.io/CRM-lite/
 
 
 2. You can find the URL of our GitHub repository that contains this code here:<br>
+https://github.com/dinozio-design/CRM-lite
 
 
 
