@@ -6,22 +6,10 @@
 
 In this group project we have created a web application from scratch! 
 
-A CRM-lite is a  Green Grass Lawn Care Services for customer to book appoitmnent in order to have fastest lawn services and  provide excellent customer lawn care services experience. This app uses 3rd party API's such Weather API and Canadian holiday api
+A CRM-lite is a  Green Grass Lawn Care Services for customer to book appoitmnent in order to have fastest lawn services and  provide excellent customer lawn care services experience. This app uses 3rd party API's such Weather API and Canadian holiday api.This API is used to check if weather is sunny on appoitment date and Canadian Holiday is used to check to make sure there is no Canadian Fedral Holiday on the day of appointment because we are off that day
 his app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code that we wrote and polished together as a team. It has a clean, polished, and responsive user interface. 
 
 Way to go TEAM 4 🙏👍
-
-
-
-# Group Project 1 - Group #4 | Interactive Front-End Application
-### From Scratch  to build a CRM-lite
-<br>
-
-
-## Description
-
-write the elevator pitch here 
-
 
 ## User Story
 
@@ -71,8 +59,10 @@ Here is a breakdown our CRM-lite app:<br>
 HTML framework for all the pages has been presented by <span> Vithusan Uruthirakumaran</span> <br>
 CSS styling,CSS framework:Bulma ,and also rendering information to display on html pages has been presented by<span> Alekhya erikipati</span>
 Fetching Weather api and also Canadian Fedral Holidays are presented by <span> Rajni bala</span>
-Storing Project details in local storage is presented by Saeid Azimi-Moghadam<br>
-
+Storing Project details in local storage is presented by <span>Saeid Azimi-Moghadam</span><br>
+Presentation is been created by <span> Vithusan Uruthirakumaran</span>  and <span> Alekhya erikipati</span><br>
+Stitch different files to ones has been doe by <span>Saeid Azimi-Moghadam</span><br>
+README file has been created by <span> Rajni bala</span><br>
 ## Deployed Application:
 1. You can find the URL of our deployed application here:<br>
 https://dinozio-design.github.io/CRM-lite/
