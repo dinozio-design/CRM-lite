@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script defer src="./assets/scripts/samscript.js"></script>
+    <script defer src="./assets/scripts/navbar.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>CRM Lite</title>
 </head>
-
-
 <body>
 
 <!-- Header with navbar and nav-items -->
 <header class="section is-fullheight-with-navbar block" >
     <div class="hero-head has-shadow ">
-    <nav class="navbar card">
+       <nav class="navbar card">
         <div class="container ">
             <div class="navbar-brand ">
                 <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
@@ -33,131 +32,122 @@
                     <span aria-hidden="true"></span>
                 </a>
                   </div>
-            <div id="navMenu" class="navbar-menu " >
-                <div class="navbar-end">
-                    <span class="navbar-item">
-                    <span class="icon has-text-danger-dark">
-                    <i class="fa fa-home"></i>
-                    </span>
-                    </span>
-                    <a class="navbar-item is-active has-text-weight-semibold" href="index.html" aria-current="page">Home</a>
-                    <a class="navbar-item has-text-link has-text-weight-semibold" href="#">About us</a>
-                    <a class="navbar-item has-text-link has-text-weight-semibold" href="#appointments">Appointments</a>
-                    <a class="navbar-item has-text-link has-text-weight-semibold" href="#">Pricing</a>
+                <div id="navbarMenu" class="navbar-menu " >
+                    <div class="navbar-end">
+                        <span class="navbar-item">
+                            <span class="icon has-text-danger-dark">
+                                <i class="fa fa-home"></i>
+                            </span>
+                        </span>
+                            <a class="navbar-item  has-text-weight-semibold is-active" href="index.html">Home</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#aboutus">About us</a>
+                            <a class="navbar-item has-text-weight-semibold  has-text-link" href="#rightDisplay" aria-current="page">Appointments</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#contact-info">ContactUs</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
+         </div>
+       </nav>
     </div>
-</header>
+    </header>
 
 <!-- Main body  -->
 
 <!-- this section displays the quote & Image by dividing it into 1:2 ratio -->
-<div class="hero body">
-    <div class="container">
-    <div class="columns is-vcentered">
-        <div class="column is-one-third">
-            <p class="title is-1 is-italic">A beautiful Lawn doesn't happen by itself!</p>
-            <p class="subtitle has-text-danger-dark is-italic mt-3">-Green Grass is here for you always</p>
-        </div>
-        <div class="column is-two-thirds">
-            <img src="./assets/images/mowing.png" alt="logo">
+    <div class="hero body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-one-third">
+                    <p class="title is-1 is-italic has-text-danger-dark">A beautiful Lawn doesn't happen by itself!
+                    </p>
+                    <p class="subtitle has-text-weight-semibold is-italic mt-3">-Green Grass is here for you always</p>
+                </div>
+                <div class="column is-two-thirds">
+                    <img src="./assets/images/mowing.png" alt="logo">
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-</div>
-
-<div class="space"></div>
 
 <!-- This section/block acts as the header to  Managing appointments section-->
-<div class="columns  is-small has-background-success-dark is-mobile is-centered is-vcentered">
-    <div class="column  ml-5 is-one-third">
-       <span class="title has-text-white has-text-weight-semibold is-italic has-text-centered">Manage your Appointments</span>
+<section class="hero  is-small" id="banner">
+    <div class="hero-body"> 
+        <p class="title has-text-white is-italic">
+            Manage Appointments:</p>
     </div>
-    <div class="column has-text-centered">
-        <figure class="image  is-96x96 column ">
-        <img  src="./assets/images/lookdown.png">
-        </figure>
-    </div>
-</div>
-
-<div class="space"></div>
-
-<!-- This section of code displays two buttons which leads to two different html pages 1.to dispay all apointments 2.To add a new appoinment -->
-<div class="is-centered" id="appointments">
-    <div class="card">
-    <div class="card-content">
-        <div class="content">
+</section>
+<div class="level-left">
+    <div class="card column ">
+        <div class="card-content">
+          <div class="content">
             <div class="column buttons are-medium">
                 <button onclick="window.location.href = 'DisplayAppointments.html';"class="button has-background-success-dark is-size-7-mobile  has-text-white has-text-weight-semibold" type="submit">Show All appointments</button>
                 <button  onclick="window.location.href = 'addNewAppointment.html';" class="button has-background-info-dark is-size-7-mobile has-text-white has-text-weight-semibold" type="submit">Add new Appoinment </button>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
 </div>
 
 
 <div class="space"></div>
 
-<!-- <div class="card">
-   <div class="card-header">
-    <div class="card-header-title"> -->
-        <div class="content">
-        <h2 id="aboutus" class="title is-italic">About Us</h2>
-    
-        <p>Our mission
+<div class="section">
+<div class="content">
+        <h2 id="aboutus" class="title is-italic has-text-warning-dark">About Us</h2>
+        <p class="is-italic has-text-black-bis">Our mission
             is, and always has been, to provide homeowners with the best quality lawn care at the most affordable price.
-            At GreenLawn Solutions, we prioritize both the health of your lawn and the prosperity of your wallet. 
+            At GreenGrassLawn Services, we prioritize both the health of your lawn and the prosperity of your wallet. 
             With our tailored fertilizer blends and top-notch Certified Premium Grade-A grass seed, we ensure that our customers
             receive nothing but the finest quality. Our dedication is further amplified by our state-of-the-art commercial application
             equipment and a highly skilled team, guaranteeing a vibrant and verdant lawn every time.
         </p>
-    </div>
+</div>
+</div>
+ 
+  
    
 
 
 <!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
-<div class="card">
-<div class="card-content">
+    <div class="hero body" id="contact-info">
+    <div class="container">
     <div class="columns is-vcentered">
         <!-- column1 -->
         <div  class="column is-one-third" >
-            <img  class="space2 "src="./assets/images/logo.png">
-        </div>
+    <img  class="space2 "src="./assets/images/logo.png">
+   </div>
 
         <!-- column2 -->
-        <div class="column is-one-third ">
-        <div class="container has-text-danger-dark">
+   <div class="column is-one-third ">
+     <div class="container has-text-danger-dark">
           <ul>
-            <li><a href="" class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
-            <li><a href="" class="has-text-danger-dark"><i class="fa fa-phone has-text-link"></i> Twitter</a></li>
-            <li><a href="" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
-            <li><a href="" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
-            <li><a href="" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
-          </ul>
-        </div> 
-        </div>
+            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
+            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fa fa-phone has-text-link"></i> Twitter</a></li>
+            <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
+            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
+            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
+        </ul>
+     </div> 
+   </div>
 
         <!-- column3 -->
-        <div class="column is-one-third ">
-        <div class="container has-text-danger-dark">
+   <div class="column is-one-third ">
+    <div class="container has-text-danger-dark">
           <ul>
-           <li><a href="" class="has-text-black has-text-weight-semibold"> Contact</a> </li>
-           <li><a href="" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
-           <li><a href="" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
-           <li><a href="" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
-           <li><a href="" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
-          </ul>
-        </div> 
-        </div>
-    </div>
+           <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-black has-text-weight-semibold"> Contact</a> </li>
+           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
+           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
+           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
+           <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
+       </ul>
+    </div> 
+  </div>
+   </div>
 </div>
 </div>
 
-<div class="space"></div>
-
+    <div class="space"></div>
+    
 <!-- footer section -->
 <footer class="hero-foot has-background-dark has-text-centered has-text-white py-6">
     <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>    

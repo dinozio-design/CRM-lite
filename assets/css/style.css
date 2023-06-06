@@ -52,15 +52,15 @@
     margin-top: 20px;
 }
 
-input:valid{
-    border-color: green;
-}
-
-input:invalid{
-    border-color: red;
-}
-
 #aboutus{
     font-family:Georgia, 'Times New Roman', Times, serif;
 
+}
+
+#banner{
+    background-color:darkseagreen;
+}
+
+#appoint{
+    background-color: gainsboro;
 }

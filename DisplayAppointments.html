@@ -11,7 +11,7 @@
     <script defer src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="./assets/scripts/samscript.js"></script>
-    <title>CRM Lite</title>
+    <title>CRM Lite-DisplayAppointments</title>
 </head>
 
 <body>
@@ -41,9 +41,9 @@
                                 </span>
                             </span>
                             <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#">About us</a>
-                            <a class="navbar-item has-text-weight-semibold is-active" href="#rightDisplay" aria-current="page">Appointments</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#">Pricing</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/underConstruction.html">About us</a>
+                            <a class="navbar-item has-text-weight-semibold is-active" href="./addNewAppointment.html" aria-current="page">Appointments</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/priceUnderConstruct.html">Pricing</a>
                         </div>
                     </div>
             </div>
@@ -60,14 +60,15 @@
     </figure>
 </div>
 
-<!-- This is the Banner (yellow) -->
-<section class="hero is-warning">
-    <div class="hero-body has-background-warning-light">
-        <p class="title has-text-weight-bold is-italic">Appointments</p>
+<!-- This is the Banner -->
+<section class="hero is-small" id="appoint">
+    <div class="hero-body ">
+        <p class="title has-text-weight-bold is-italic ml-5">Appointments</p>
     </div>
 </section>
 
 <!-- This section of code renders the list of all Appointments from local storage -->
+<div class="section">
 <div id="rightDisplay" class="tile is-parent is-vertical">
     <article class="tile is-child notification is-info">
         <p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p>
@@ -75,8 +76,10 @@
         </p>
     </article>
 </div>
+</div>
 
- <div class="space"></div>
+
+<div class="space"></div>
 
 <!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
 <div class="hero body">
@@ -91,11 +94,11 @@
         <div class="column is-one-third ">
         <div class="container has-text-danger-dark">
             <ul>
-                <li><a href="" class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
-                <li><a href="" class="has-text-danger-dark"><i class="fa fa-phone has-text-link"></i> Twitter</a></li>
-                <li><a href="" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
-                <li><a href="" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
-                <li><a href="" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fa fa-phone has-text-link"></i> Twitter</a></li>
+                <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
               </ul>
         </div>
         </div>
@@ -105,10 +108,10 @@
         <div class="container has-text-danger-dark">
             <ul>
                 <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
-                <li><a href="" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
-                <li><a href="" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
-                <li><a href="" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
-                <li><a href="" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
+                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
             </ul>
         </div>
         </div>
