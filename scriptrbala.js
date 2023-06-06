@@ -5,3 +5,15 @@ var confirmAppointment = $("#confirm");
 var holidayName = $("#holiday-name")
 var holidayDate = $("#holiday-date")
 var DateofAppointment = $("#Date-of-Appointment")
+
+//main function starts here
+$(document).ready(function(){
+  //event listener on search button
+confirmAppointment.on("click",function(){
+  //get value in input search value
+  var searchCity = enterCityName.val();
+  enterCityName.val(" ");
+  
+  weatherForecast(searchCity);
+  canadianholidays();
+});
