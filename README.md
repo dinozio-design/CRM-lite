@@ -64,11 +64,14 @@ The following animation shows the web application's appearance and functionality
 
 
 ## Our Work
-write some detail here
-and talk about the work breakdown, who did what, etc
-add pictures of canban, etc.
+We have great Experience working together in a team .Great Team
+Here is a breakdown our CRM-lite app:<br>
+HTML framework for all the pages has been presented by <span> Vithusan Uruthirakumaran</span> <br>
+CSS styling,CSS framework:Bulma ,and also rendering information to display on html pages has been presented by<span> Alekhya erikipati</span>
+Fetching Weather api and also Canadian Fedral Holidays are presented by <span> Rajni bala</span>
+Storing Project details in local storage is presented by Saeid Azimi-Moghadam<br>
 
-
+## Deployed Application:
 1. You can find the URL of our deployed application here:<br>
 https://dinozio-design.github.io/CRM-lite/
 
