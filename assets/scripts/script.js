@@ -107,10 +107,12 @@ function init() {
         },
 
     ];
+    var storedHistory = JSON.parse(localStorage.getItem("appointment_history"));
     // checking duplicates
     function contains(key) {
-        for (i = 0; i < apptInfo.length; i++) {
-            if (apptInfo[i].key === key) {
+        storedHistory = JSON.parse(localStorage.getItem("appointment_history"));
+        for (i = 0; i < storedHistory.length; i++) {
+            if (storedHistory[i].id === key) {
                 console.log(`found Douplicate`);
                 return true;
             }
