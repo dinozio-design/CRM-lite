@@ -2,11 +2,9 @@
 //declare variables to store values
 var enterCityName = $("#cityName");
 var confirmAppointment = $("#confirm");
-var holidayName = $("#holiday-name");
-var holidayDate = $("#holiday-date");
-var DateofAppointment = $("#Date-of-Appointment");
-var todayWeather = $("#today-weather");
-var CanadianFedralHoliday = $("#canadian-holiday");
+var holidayName = $("#holiday-name")
+var holidayDate = $("#holiday-date")
+var DateofAppointment = $("#Date-of-Appointment")
 
 //main function starts here
 $(document).ready(function(){
@@ -17,7 +15,6 @@ confirmAppointment.on("click",function(){
   enterCityName.val(" ");
   var date = DateofAppointment.val();
   console.log("this is Customer Input date", date);
-  weatherDashboard(searchCity)
   weatherForecast(searchCity);
   canadianholidays(date);
 });
@@ -26,43 +23,11 @@ confirmAppointment.on("click",function(){
 confirmAppointment.keypress(function (event) {
   var keycode = (event.keycode ? event.keycode : event.which);
   if (keycode === 13) {
-weatherDashboard(searchCity);
+
     weatherForecast(searchCity);
     canadianholidays(date);
   }
 });
-
-//weatherDashboard function
-function weatherDashboard(searchCity){
-  //fetch weather api
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + searchCity + "&appid=b4ed94adc674507878b0aeb7f93e988b")
-  .then(function(response){
-    if (response.ok) {
-
-      response.json()
-      .then(function (data) {
-    
-    todayWeather.empty();
-//create element and append it to dispaly today weather
-    var title = $("<h3>").text(data.name + " (" + new Date().toLocaleDateString() + ")");
-    var imgtag = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
-    var divCard = $("<div>");
-    var divcardBody = $("<div>");
-    var displayWind = $("<p>").text("Wind: " + data.wind.speed + " MPH");
-    var displayHumid = $("<p>").text("Humidity: " + data.main.humidity + " %");
-    var displayTemp = $("<p>").text("Temperature: " + data.main.temp + " K");
-    console.log(data);
-
-//append data
-    title.append(imgtag);
-    divcardBody.append(title, displayTemp, displayHumid, displayWind);
-    divCard.append(divcardBody);
-todayWeather.append(divCard);
-    console.log(data);
-      })
-}
-  })
-}
 
 // function weatherForecast(searchTerm) 
 function weatherForecast(searchCity) {
@@ -73,7 +38,7 @@ function weatherForecast(searchCity) {
       if (response.ok) {
         response.json().then(function (data) {
           console.log("this is the weather", data);
-          $("#forecast").html("<h4 class=\"mt-3\">Upcoming Forecast:</h4>").append("<div class=\"row\">");
+          $("#forecast").html("<h4 class=\"mt-3\">5-Day Forecast:</h4>").append("<div class=\"row\">");
 
           //loop to create a 5 days weather forecast`
           for (var i = 0; i < data.list.length; i++) {
@@ -116,15 +81,14 @@ function weatherForecast(searchCity) {
           for (var i = 0; i < data.holidays.length; i++) {
             var offDay = data.holidays[i];
             if (offDay.federal === 1 && offDay.date === apptDate) {
-              //if there is a Canadian fedral holiday it will display , bottom line
               CanadianFedralHoliday.append("this is the Federal Holiday data    ", offDay.date, "   ", offDay.nameEn);
               
               console.log("this is the Federal Holiday data    ", offDay.date, "   ", offDay.nameEn);
 
-          
+              // at this point the method will return the offDay object to the caller
             };
           };
-       
+          // console.log(data.holidays.length);
         });
       } 
     })
