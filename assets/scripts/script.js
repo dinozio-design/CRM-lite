@@ -1,68 +1,151 @@
+var apptInfo = [];
+function init() {
+    // staticly generated data for dev purpose
+    const genData = [
+        {
+            "id": 1,
+            "fullName": "Lowell Bowland",
+            "email": "lbowland0@t.co",
+            "phone": "593-913-2017",
+            "address": "8859 3rd Court",
+            "city": "Greater Napanee",
+            "prov": "Ontario",
+            "postalZip": "K7R",
+            "date": "2023-06-08",
+            "time": "10:28"
+        }, {
+            "id": 2,
+            "fullName": "Charisse Slott",
+            "email": "cslott1@blog.com",
+            "phone": "210-102-8504",
+            "address": "64 High Crossing Way",
+            "city": "Powassan",
+            "prov": "Ontario",
+            "postalZip": "E3G",
+            "date": "2023-06-08",
+            "time": "14:00"
+        }, {
+            "id": 3,
+            "fullName": "Dorris Bleyman",
+            "email": null,
+            "phone": "369-763-8850",
+            "address": "3 Boyd Parkway",
+            "city": "Wingham",
+            "prov": "Ontario",
+            "postalZip": "T5K",
+            "date": "2023-06-08",
+            "time": "16:11"
+        }, {
+            "id": 4,
+            "fullName": "Tiffie Moan",
+            "email": "tmoan3@umn.edu",
+            "phone": "965-484-1861",
+            "address": "2933 Lake View Street",
+            "city": "Windsor",
+            "prov": "Ontario",
+            "postalZip": "J1S",
+            "date": "2023-06-09",
+            "time": "5:09"
+        }, {
+            "id": 5,
+            "fullName": "Andie Styant",
+            "email": null,
+            "phone": "781-501-3314",
+            "address": "5288 Burning Wood Junction",
+            "city": "Hearst",
+            "prov": "Ontario",
+            "postalZip": "S4A",
+            "date": "2023-06-10",
+            "time": "13:26"
+        },
+        {
+            "id": 6,
+            "full-name": "Bram Greenland",
+            "email": "bgreenland9@house.gov",
+            "phone": "177-739-2618",
+            "address": "97918 Melody Drive",
+            "city": "Aylmer", "prov": "Ontario",
+            "postalZip": "N5H",
+            "date": "2023-07-01",
+            "time": "5:09"
+        },
+        {
+            "id": 7,
+            "full-name": "Ami Ply",
+            "email": null,
+            "phone": "942-984-7037",
+            "address": "4996 Macpherson Place",
+            "city": "Orillia",
+            "prov": "Ontario",
+            "postalZip": "L3V",
+            "date": "2023-08-07",
+            "time": "5:09"
+        },
+        {
+            "id": 12,
+            "full-name": "Consuelo Safont",
+            "email": null,
+            "phone": "500-847-6808",
+            "address": "53406 Hovde Pass",
+            "city": "Concord",
+            "prov": "Ontario",
+            "postalZip": "L4K",
+            "date": "2023-12-31",
+            "time": "5:09"
+        },
+        {
+            "id": 13,
+            "full-name": "Alexa Giffkins",
+            "email": "agiffkinsc@si.edu",
+            "phone": "534-361-0612",
+            "address": "43662 Sheridan Circle",
+            "city": "Espanola",
+            "prov": "Ontario",
+            "postalZip": "P5E",
+            "date": "2024-01-01",
+            "time": "5:09"
+        },
 
-
-
-
-
-
-
-
-
-
-
-
-// ------------------------------------------------------- //
-// var APIkey = "3fc619e2b6b7dda6c371bb7186f492ab";
-
-
-var location = $("#Location").value();
-var APIkey = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&appid=3fc619e2b6b7dda6c371bb7186f492ab&units=imperial";
-
-
-
-  function weatherForecast(location) {
- 
-    fetch(APIkey)
-    .then(function(response){
-      return response.json();
-    })
-
-    .then(function(response){
-      return response.json();
-    })
-
-  .then(function (data) {
-    console.log(data);
-    // $("#forecast").html("<h4 class=\"mt-3\">5-Day Forecast:</h4>").append("<div class=\"row\">");
-
-    //loop to create a new card for 5 days pull data image from search
-    for (var i = 0; i < data.list.length; i++) {
-
-      if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
-
-        var title = $("<h3>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-        var weatherIconlogo = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
-        var colFive = $("<div>").addClass("col-md-2.5");
-        var cardFive = $("<div>").addClass("card bg-primary text-white");
-        var cardBodyFive = $("<div>").addClass("card-body p-2");
-        var viewHumidityvalue = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
-        var viewTempvalue = $("<p>").addClass("card-text").text("Temperature: " + data.list[i].main.temp + " °F");
-        var viewWindvalue = $("<p>").addClass("card-text").text("Wind: " + data.list[i].wind.speed + " MPH");
-
-        //merge together and put on page
-        colFive.append(cardFive.append(cardBodyFive.append(titleFive, imgFive, tempFive, humidFive,windFive)));
-        //append card to column, body to card, and other elements to body
-        $("#forecast .row").append(colFive);
-      }
+    ];
+    var storedHistory = JSON.parse(localStorage.getItem("appointment_history"));
+    // checking duplicates
+    function contains(key) {
+        storedHistory = JSON.parse(localStorage.getItem("appointment_history"));
+        for (i = 0; i < storedHistory.length; i++) {
+            if (storedHistory[i].id === key) {
+                console.log(`found Douplicate`);
+                return true;
+            }
+        };
+        return false;
     }
-  });
+    // comparision for sorting
+    function compare(a, b) {
+        if ((a.date < b.date) && (a.time < b.time)) {
+            return -1;
+        }
+        if ((a.date > b.date) && (a.time > b.time)) {
+            return 1;
+        }
+        return 0;
+    }
+    // sort by date and time
+    genData.sort(compare);
+    // save to local storage function
+    function saveToLocalStorage(apptObj) {
+        let foundDouplicate = contains(apptObj.id);
+        if (!foundDouplicate) {
+            console.log(`no duoplicates`);
+            apptInfo.push(apptObj);
+            localStorage.setItem("appointment_history", JSON.stringify(apptInfo));
+        };
+    }
+    // calls the save to local storage function for each item in the array
+    $.each(genData, function () {
+        // console.log(this);
+        saveToLocalStorage(this);
+    });
+
 }
-
-
-
-
-
-API Key
-13727e15-3698-4029-9d93-af843258ebd2
-
-   
-  
+init();
+console.log(apptInfo);

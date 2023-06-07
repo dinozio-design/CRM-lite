@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="./assets/scripts/navbar.js"> </script>
-    <title>CRM Lite - Add new Appointment</title>
+    <script defer src="./assets/scripts/addNewAppointmentScript.js"></script>
+    <title>CRM Lite - Add New Appointment</title>
 </head>
 
 <body>
@@ -39,7 +41,7 @@
                             </span>
                             <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
                             <a class="navbar-item has-text-link has-text-weight-semibold"
-                                href="./index.html#contact-info">About us</a>
+                                href="./index.html#about-us">About us</a>
                             <a class="navbar-item has-text-weight-semibold has-text-link"
                                 href="./DisplayAppointments.html" aria-current="page">Appointments</a>
                             <a class="navbar-item has-text-link has-text-weight-semibold" href="#contact-info">Contact
@@ -69,13 +71,13 @@
     </section>
 
     <!-- This is the right hand side box, that will have the form elements -->
-    <form class="box column is-two-quarters mx-2">
+    <form id="userForm" class="box column is-two-quarters mx-2">
         <!-- This is the form element for full name -->
         <!-- Want to add a function in which the check icon turns green when a value is inputted -->
         <div class="field">
             <label class="label is-underlined">Full Name</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="Full Name">
+                <input class="input is-success" type="text" id="fullName" placeholder="Full Name">
                 <span class="icon is-small is-left">
                     <i class="fa fa-user"></i>
                 </span>
@@ -90,7 +92,7 @@
         <div class="field">
             <label class="label is-underlined">Email</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-info" type="email" placeholder="Email input">
+                <input id="eMail" class="input is-info" type="email" placeholder="Email input">
                 <span class="icon is-small is-left">
                     <i class="fa fa-envelope"></i>
                 </span>
@@ -104,7 +106,7 @@
         <div class="field">
             <label class="label is-underlined">Phone Number</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="tel" placeholder="Phone Number">
+                <input id="pHone" class="input is-danger" type="tel" placeholder="Phone Number">
                 <span class="icon is-small is-left">
                     <i class="fa fa-phone"></i>
                 </span>
@@ -130,7 +132,7 @@
                 <div class="field">
                     <label class="label is-underlined">City</label>
                     <div class="control has-icons-left has-icons-right">
-                        <input class="input is-danger" type="text" id="city-Name" placeholder="E.g Toronto">
+                        <input class="input is-danger" type="text" id="cityNameSearch" placeholder="E.g Toronto" name="cityNameSearch">
                         <span class="icon is-small is-left">
                             <i class="fa fa-map-pin"></i>
                         </span>
@@ -159,7 +161,7 @@
                         <div class="field">
                             <label class="label is-underlined">Appointment Date</label>
                             <div class="control">
-                                <input class="input is-link is-danger" id="Date-of-Appointment" type="date">
+                                <input name ="dateOfAppointment" class="input is-link is-danger" id="dateOfAppointment" type="date">
                                 <p class="help is-danger">This is a required!</p>
                             </div>
                         </div>
@@ -168,7 +170,7 @@
                         <div class="field">
                             <label class="label is-underlined">Appointment Time</label>
                             <div class="control">
-                                <input class="input is-link" type="time">
+                                <input class="input is-link" id="timeOfAppointment" type="time">
                             </div>
                         </div>
 
@@ -213,7 +215,7 @@
     </div>
 
     <div class="space"></div>
-    <div class="hero body" id="contact-info">
+    <div class="hero body">
         <div class="container">
             <div class="columns is-vcentered">
                 <!-- column1 -->
@@ -222,7 +224,7 @@
                 </div>
                 <!-- column2 -->
                 <div class="column is-one-third ">
-                    <div class="container has-text-danger-dark">
+                    <div id="contact-info" class="container has-text-danger-dark">
                         <ul>
                             <li><a href="https://www.linkedin.com/home" class="has-text-danger-dark"><i
                                         class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
@@ -270,7 +272,7 @@
 
 </body>
 <!-- This is the script to show and hide the modal -->
-<script>
+<!-- <script>
     document.addEventListener('DOMContentLoaded', () => {
         const modal = document.querySelector('.modal');
         const modalClose = modal.querySelector('.delete');
@@ -285,7 +287,7 @@
             modal.classList.remove('is-active');
         });
     });
-</script>
+</script> -->
 </body>
 
 </html>
