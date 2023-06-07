@@ -148,4 +148,4 @@ function init() {
 
 }
 init();
-console.log(apptInfo);
+// console.log(apptInfo);
