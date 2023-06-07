@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <script defer src="./assets/scripts/samscript.js"></script>
-    <script defer src="./assets/scripts/navbar.js"></script>
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="./assets/scripts/navbar.js"></script>
+    <!-- <script defer src="./assets/scripts/samscript.js"></script> -->
     <title>CRM Lite</title>
 </head>
 
@@ -28,12 +28,12 @@
                         <figure class="image  is-96x96">
                             <img src="./assets/images/logo.png">
                         </figure>
-                        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu"
+                        <span  class="navbar-burger" aria-label="menu" data-target="navbarMenu"
                             aria-expanded="false">
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
-                        </a>
+                    </span>
                     </div>
                     <div id="navbarMenu" class="navbar-menu ">
                         <div class="navbar-end">
@@ -44,11 +44,11 @@
                             </span>
                             <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
                             <a class="navbar-item has-text-link has-text-weight-semibold"
-                                href="./Under Construction/underConstruction.html">About us</a>
+                                href="./index.html/about-us">About us</a>
                             <a class="navbar-item has-text-weight-semibold  has-text-link"
                                 href="./DisplayAppointments.html" aria-current="page">Appointments</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold"
-                                href="#contact-info">Contact Us</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#contact-info">Contact
+                                Us</a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                             type="submit">Show All appointments</button>
                         <button onclick="window.location.href = 'addNewAppointment.html';"
                             class="button has-background-info-dark is-size-7-mobile has-text-white has-text-weight-semibold"
-                            type="submit">Add new Appoinment </button>
+                            type="submit">Add new Appointment </button>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
 
             <div class="section" id="contact-info">
                 <div class="content">
-                    <h2 id="aboutus" class="title is-italic has-text-warning-dark">About Us</h2>
+                    <h2 id="about-us" class="title is-italic has-text-warning-dark">About Us</h2>
                     <p class="is-italic has-text-black-bis">Our mission
                         is, and always has been, to provide homeowners with the best quality lawn care at the most
                         affordable price.
@@ -179,7 +179,7 @@
 
             <!-- footer section -->
             <footer class="hero-foot has-background-dark has-text-centered has-text-white py-6">
-                <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>
+                <p> © Copyright 2023, CRM Lite-Green grass Lawn care services Corporation</p>
             </footer>
 
 </body>

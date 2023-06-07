@@ -16,118 +16,134 @@
 
 <body>
 
-<!-- Header with a nav-bar-->
-<header class="section is-fullheight-with-navbar block">
-    <div class="hero-head has-shadow ">
-        <nav class="navbar card">
-            <div class="container ">
-            <div class="navbar-brand ">
-                <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
+    <!-- Header with navbar and nav-items -->
+    <header class="section is-fullheight-with-navbar block">
+        <div class="hero-head has-shadow ">
+            <nav class="navbar card">
+                <div class="container ">
+                    <div class="navbar-brand ">
+                        <h1 class=" title is-2 has-text-warning-dark ">CRM Lite</h1>
 
-                <figure class="image  is-96x96">
-                    <img src="./assets/images/logo.png">
-                </figure>
-                        <span class="navbar-burger" aria-label="menu" data-target="navbarMenu">
+                        <figure class="image  is-96x96">
+                            <img src="./assets/images/logo.png">
+                        </figure>
+                        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu"
+                            aria-expanded="false">
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
-                        </span>
+                        </a>
                     </div>
                     <div id="navbarMenu" class="navbar-menu ">
                         <div class="navbar-end">
                             <span class="navbar-item">
                                 <span class="icon has-text-danger-dark">
-                                    <i class="fas fa-home"></i>
+                                    <i class="fa fa-home"></i>
                                 </span>
                             </span>
                             <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/underConstruction.html">About us</a>
-                            <a class="navbar-item has-text-weight-semibold is-active" href="./addNewAppointment.html" aria-current="page">Appointments</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold" href="./Under Construction/priceUnderConstruct.html">Pricing</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold"
+                                href="./index.html#contact-info">About us</a>
+                            <a class="navbar-item has-text-weight-semibold  has-text-link"
+                                href="./DisplayAppointments.html" aria-current="page">Appointments</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#contact-info">Contact
+                                Us</a>
                         </div>
                     </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Displays image  -->
+    <div class="section">
+        <figure class="image">
+            <img src="./assets/images/lawn2.jpg">
+        </figure>
+    </div>
+
+    <!-- This is the Banner -->
+    <section class="hero is-small" id="appoint">
+        <div class="hero-body ">
+            <p class="title has-text-weight-bold is-italic ml-5">Appointments</p>
+        </div>
+    </section>
+
+    <!-- This section of code renders the list of all Appointments from local storage -->
+    <div class="section">
+        <div id="rightDisplay" class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-info">
+                <p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p>
+                <p>${apptInfo[i].address}, ${apptInfo[i].city}, ${apptInfo[i].prov} | Phone: ${apptInfo[i].phone}<span>
+                        icons</span>
+                </p>
+            </article>
+        </div>
+    </div>
+
+
+    <div class="space"></div>
+
+    <!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
+    <div class="hero body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <!-- column1 -->
+                <div class="column is-two-fifths">
+                    <img class="space2 " src="./assets/images/logo.png">
+                </div>
+
+                <!-- column2 -->
+                <div class="column is-one-third ">
+                    <div class="container has-text-danger-dark">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/home" class="has-text-danger-dark"><i
+                                        class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
+                            <li><a href="https://twitter.com/" class="has-text-danger-dark"><i
+                                        class="fa fa-phone has-text-link"></i> Twitter</a></li>
+                            <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-danger-dark"><i
+                                        class="fab fa-github has-text-black"></i>
+                                    GitHUb</a></li>
+                            <li><a href="https://www.facebook.com/" class="has-text-danger-dark"><i
+                                        class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/" class="has-text-danger-dark"><i
+                                        class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- column3 -->
+                <div class="column is-one-third ">
+                    <div class="container has-text-danger-dark">
+                        <ul>
+                            <li><a href="https://github.com/dinozio-design/CRM-lite"
+                                    class="has-text-black has-text-weight-semibold"> Contact</a> </li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Privacy</a></li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
+                            <li><a href="./Under Construction/underConstruction.html"
+                                    class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </div>
-</header>
-
-
-
-<!-- Displays image  -->
-<div class="section">
-    <figure class="image">
-        <img src="./assets/images/lawn2.jpg">
-    </figure>
-</div>
-
-<!-- This is the Banner -->
-<section class="hero is-small" id="appoint">
-    <div class="hero-body ">
-        <p class="title has-text-weight-bold is-italic ml-5">Appointments</p>
-    </div>
-</section>
-
-<!-- This section of code renders the list of all Appointments from local storage -->
-<div class="section">
-<div id="rightDisplay" class="tile is-parent is-vertical">
-    <article class="tile is-child notification is-info">
-        <p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p>
-        <p>${apptInfo[i].address}, ${apptInfo[i].city}, ${apptInfo[i].prov} | Phone: ${apptInfo[i].phone}<span> icons</span>
-        </p>
-    </article>
-</div>
-</div>
-
-
-<div class="space"></div>
-
-<!-- This section is divides into 3columns ,1:1:1 ratio to display the logo ,social media & company policies -->
-<div class="hero body">
-    <div class="container">
-    <div class="columns is-vcentered">
-        <!-- column1 -->
-        <div class="column is-two-fifths">
-            <img class="space2 " src="./assets/images/logo.png">
-        </div>
-        
-        <!-- column2 -->
-        <div class="column is-one-third ">
-        <div class="container has-text-danger-dark">
-            <ul>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fa fa-phone has-text-link"></i> Twitter</a></li>
-                <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-danger-dark"><i class="fab fa-github has-text-black"></i> GitHUb</a></li>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
-              </ul>
-        </div>
-        </div>
-
-        <!-- column3 -->
-        <div class="column is-one-third ">
-        <div class="container has-text-danger-dark">
-            <ul>
-                <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Privacy</a></li>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Terms & Conditions</a></li>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Diclaimer</a></li>
-                <li><a href="./Under Construction/underConstruction.html" class="has-text-black has-text-weight-semibold"> Cancellation</a></li>
-            </ul>
-        </div>
         </div>
     </div>
-    </div>
-</div>
 
-<div class="space"></div>
+    <div class="space"></div>
 
-<!-- footer section -->
-<footer class="has-background-dark has-text-centered has-text-white py-6">
-    <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>
-</footer>
+    <!-- footer section -->
+    <footer class="has-background-dark has-text-centered has-text-white py-6">
+        <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>
+    </footer>
 
-<script src="./assets/scripts/samscript.js"></script>
+    <script src="./assets/scripts/samscript.js"></script>
 
 </body>
-</html>
 
+</html>
