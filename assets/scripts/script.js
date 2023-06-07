@@ -127,7 +127,9 @@ function init() {
         }
         return 0;
     }
+    // sort by date and time
     genData.sort(compare);
+    // save to local storage function
     function saveToLocalStorage(apptObj) {
         let foundDouplicate = contains(apptObj.id);
         if (!foundDouplicate) {
@@ -136,6 +138,7 @@ function init() {
             localStorage.setItem("appointment_history", JSON.stringify(apptInfo));
         };
     }
+    // calls the save to local storage function for each item in the array
     $.each(genData, function () {
         // console.log(this);
         saveToLocalStorage(this);
