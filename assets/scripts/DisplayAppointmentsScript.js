@@ -11,7 +11,7 @@ function init() {
             "city": "Greater Napanee",
             "prov": "Ontario",
             "postalZip": "K7R",
-            "date": "2024-05-01",
+            "date": "2023-06-07",
             "time": "10:28"
           }, {
             "id": 2,
@@ -22,7 +22,7 @@ function init() {
             "city": "Powassan",
             "prov": "Ontario",
             "postalZip": "E3G",
-            "date": "2024-02-02",
+            "date": "2023-06-07",
             "time": "14:00"
           }, {
             "id": 3,
@@ -33,7 +33,7 @@ function init() {
             "city": "Wingham",
             "prov": "Ontario",
             "postalZip": "T5K",
-            "date": "2023-09-03",
+            "date": "2023-06-08",
             "time": "1:11"
           }, {
             "id": 4,
@@ -44,7 +44,7 @@ function init() {
             "city": "Windsor",
             "prov": "Ontario",
             "postalZip": "J1S",
-            "date": "2024-05-09",
+            "date": "2023-06-09",
             "time": "5:09"
           }, {
             "id": 5,
@@ -55,7 +55,7 @@ function init() {
             "city": "Hearst",
             "prov": "Ontario",
             "postalZip": "S4A",
-            "date": "2023-07-29",
+            "date": "2023-06-10",
             "time": "13:26"
           }
     ];
