@@ -11,9 +11,9 @@ function init() {
             "city": "Greater Napanee",
             "prov": "Ontario",
             "postalZip": "K7R",
-            "date": "2023-06-07",
+            "date": "2023-06-08",
             "time": "10:28"
-          }, {
+        }, {
             "id": 2,
             "fullName": "Charisse Slott",
             "email": "cslott1@blog.com",
@@ -22,9 +22,9 @@ function init() {
             "city": "Powassan",
             "prov": "Ontario",
             "postalZip": "E3G",
-            "date": "2023-06-07",
+            "date": "2023-06-08",
             "time": "14:00"
-          }, {
+        }, {
             "id": 3,
             "fullName": "Dorris Bleyman",
             "email": null,
@@ -34,8 +34,8 @@ function init() {
             "prov": "Ontario",
             "postalZip": "T5K",
             "date": "2023-06-08",
-            "time": "1:11"
-          }, {
+            "time": "16:11"
+        }, {
             "id": 4,
             "fullName": "Tiffie Moan",
             "email": "tmoan3@umn.edu",
@@ -46,7 +46,7 @@ function init() {
             "postalZip": "J1S",
             "date": "2023-06-09",
             "time": "5:09"
-          }, {
+        }, {
             "id": 5,
             "fullName": "Andie Styant",
             "email": null,
@@ -57,7 +57,51 @@ function init() {
             "postalZip": "S4A",
             "date": "2023-06-10",
             "time": "13:26"
-          }
+        },
+        {
+            "id": 6,
+            "full-name": "Bram Greenland",
+            "email": "bgreenland9@house.gov",
+            "phone": "177-739-2618",
+            "address": "97918 Melody Drive",
+            "city": "Aylmer", "prov": "Ontario",
+            "postalZip": "N5H",
+            "date": "2023-07-01"
+        },
+        {
+            "id": 7,
+            "full-name": "Ami Ply",
+            "email": null,
+            "phone": "942-984-7037",
+            "address": "4996 Macpherson Place",
+            "city": "Orillia",
+            "prov": "Ontario",
+            "postalZip": "L3V",
+            "date": "2023-08-07"
+        },
+        {
+            "id": 12,
+            "full-name": "Consuelo Safont",
+            "email": null,
+            "phone": "500-847-6808",
+            "address": "53406 Hovde Pass",
+            "city": "Concord",
+            "prov": "Ontario",
+            "postalZip": "L4K",
+            "date": "2023-09-29"
+        },
+        {
+            "id": 13,
+            "full-name": "Alexa Giffkins",
+            "email": "agiffkinsc@si.edu",
+            "phone": "534-361-0612",
+            "address": "43662 Sheridan Circle",
+            "city": "Espanola",
+            "prov": "Ontario",
+            "postalZip": "P5E",
+            "date": "2024-01-01"
+        },
+
     ];
     function contains(key) {
         for (i = 0; i < apptInfo.length; i++) {
@@ -68,22 +112,22 @@ function init() {
         };
         return false;
     }
-    function compare( a, b ) {
-        if ( (a.date < b.date)&& (a.time < b.time)){
-          return -1;
+    function compare(a, b) {
+        if ((a.date < b.date) && (a.time < b.time)) {
+            return -1;
         }
-        if ( (a.date > b.date)&& (a.time > b.time) ){
-          return 1;
+        if ((a.date > b.date) && (a.time > b.time)) {
+            return 1;
         }
         return 0;
-      }
-      
+    }
+
     genData.sort(compare);
-    $.each(genData, function (){
+    $.each(genData, function () {
         // console.log(this);
         saveToLocalStorage(this);
     })
-    
+
     var displayAreaRight = $('#rightDisplay');
     var displayAreaLeft = $('#lefttDisplay');
     var storedHistory = JSON.parse(localStorage.getItem("appointment_history"));
@@ -97,7 +141,7 @@ function init() {
             displayAreaRight.append(`<article class="tile is-child notification is-info"><p class="subtitle">${apptInfo[i].fullName} on ${apptInfo[i].date}, at ${apptInfo[i].time}</p><p>${apptInfo[i].address}, ${apptInfo[i].city}, ${apptInfo[i].prov} | Phone: ${apptInfo[i].phone}<span>    icons</span></p></article>`);
         }
     };
-    function saveToLocalStorage(apptObj){
+    function saveToLocalStorage(apptObj) {
         let foundDouplicate = contains(apptObj.id);
         if (!foundDouplicate) {
             console.log(`no duoplicates`);
