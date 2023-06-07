@@ -60,7 +60,7 @@ function init() {
         },
         {
             "id": 6,
-            "full-name": "Bram Greenland",
+            "fullName": "Bram Greenland",
             "email": "bgreenland9@house.gov",
             "phone": "177-739-2618",
             "address": "97918 Melody Drive",
@@ -71,7 +71,7 @@ function init() {
         },
         {
             "id": 7,
-            "full-name": "Ami Ply",
+            "fullName": "Ami Ply",
             "email": null,
             "phone": "942-984-7037",
             "address": "4996 Macpherson Place",
@@ -83,7 +83,7 @@ function init() {
         },
         {
             "id": 12,
-            "full-name": "Consuelo Safont",
+            "fullName": "Consuelo Safont",
             "email": null,
             "phone": "500-847-6808",
             "address": "53406 Hovde Pass",
@@ -95,7 +95,7 @@ function init() {
         },
         {
             "id": 13,
-            "full-name": "Alexa Giffkins",
+            "fullName": "Alexa Giffkins",
             "email": "agiffkinsc@si.edu",
             "phone": "534-361-0612",
             "address": "43662 Sheridan Circle",
@@ -133,12 +133,19 @@ function init() {
     genData.sort(compare);
     // save to local storage function
     function saveToLocalStorage(apptObj) {
-        let foundDouplicate = contains(apptObj.id);
-        if (!foundDouplicate) {
-            console.log(`no duoplicates`);
+        if (storedHistory !== null) {
+            let foundDouplicate = contains(apptObj.id);
+            if (!foundDouplicate) {
+                console.log(`no duoplicates`);
+                apptInfo.push(apptObj);
+                localStorage.setItem("appointment_history", JSON.stringify(apptInfo));
+            };
+        } else {
             apptInfo.push(apptObj);
             localStorage.setItem("appointment_history", JSON.stringify(apptInfo));
-        };
+        }
+
+
     }
     // calls the save to local storage function for each item in the array
     $.each(genData, function () {

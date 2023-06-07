@@ -2,13 +2,13 @@ function initNApp() {
 
     var apptInfo = [];
     var userFormEl = $('#userForm');
-    var cityNameSearch = $('#cityNameSearch');
-    var dateOfAppointment = $('#dateOfAppointment');
-    var timeOfAppointment = $('#timeOfAppointment');
-    var fullName = $('#fullName');
-    var eMail = $("#eMail");
-    var pHone = $("#pHone");
-    var apptAddress = $('#address');
+    // var cityNameSearch = $('#cityNameSearch');
+    // var dateOfAppointment = $('#dateOfAppointment');
+    // var timeOfAppointment = $('#timeOfAppointment');
+    // var fullName = $('#fullName');
+    // var eMail = $("#eMail");
+    // var pHone = $("#pHone");
+    // var apptAddress = $('#address');
 
     var storedHistory = JSON.parse(localStorage.getItem("appointment_history"));
     if (storedHistory !== null) {
