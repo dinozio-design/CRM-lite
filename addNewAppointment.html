@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/ad46d35fee.js" crossorigin="anonymous"></script>
+    <script defer src="./assets/scripts/navbar.js"> </script>
     <title>CRM Lite - Add new Appointment</title>
 </head>
 
@@ -38,11 +39,11 @@
                             </span>
                             <a class="navbar-item has-text-link has-text-weight-semibold" href="index.html">Home</a>
                             <a class="navbar-item has-text-link has-text-weight-semibold"
-                                href="./Under Construction/underConstruction.html">About us</a>
-                            <a class="navbar-item has-text-weight-semibold is-active" href="#rightDisplay"
-                                aria-current="page">Appointments</a>
-                            <a class="navbar-item has-text-link has-text-weight-semibold"
-                                href="./Under Construction/priceUnderConstruct.html">Pricing</a>
+                                href="./index.html#contact-info">About us</a>
+                            <a class="navbar-item has-text-weight-semibold has-text-link"
+                                href="./DisplayAppointments.html" aria-current="page">Appointments</a>
+                            <a class="navbar-item has-text-link has-text-weight-semibold" href="#contact-info">Contact
+                                Us</a>
                         </div>
                     </div>
                 </div>
@@ -188,6 +189,10 @@
                                 <button class="button is-link is-light" type="reset">Clear</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
 
     <!-- This is the modal code -->
@@ -208,32 +213,39 @@
     </div>
 
     <div class="space"></div>
-    <div class="hero body">
+    <div class="hero body" id="contact-info">
         <div class="container">
             <div class="columns is-vcentered">
-                <div class="column is-two-fifths">
+                <!-- column1 -->
+                <div class="column is-one-third">
                     <img class="space2 " src="./assets/images/logo.png">
                 </div>
+                <!-- column2 -->
                 <div class="column is-one-third ">
                     <div class="container has-text-danger-dark">
                         <ul>
-                            <li><a class="has-text-danger-dark"><i class="fab fa-linkedin has-text-link"></i>
-                                    LinkedIn</a> </li>
-                            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i
-                                        class="fab fa-twitter  has-text-link"></i> Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/home" class="has-text-danger-dark"><i
+                                        class="fab fa-linkedin has-text-link"></i> LinkedIn</a> </li>
+                            <li><a href="https://twitter.com/" class="has-text-danger-dark"><i
+                                        class="fa fa-phone has-text-link"></i> Twitter</a></li>
                             <li><a href="https://github.com/dinozio-design/CRM-lite" class="has-text-danger-dark"><i
-                                        class="fab fa-github has-text-black"></i> GitHUb</a></li>
-                            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i
+                                        class="fab fa-github has-text-black"></i>
+                                    GitHUb</a></li>
+                            <li><a href="https://www.facebook.com/" class="has-text-danger-dark"><i
                                         class="fab fa-facebook  has-text-link"></i> Facebook</a></li>
-                            <li><a href="./Under Construction/underConstruction.html" class="has-text-danger-dark"><i
+                            <li><a href="https://www.instagram.com/" class="has-text-danger-dark"><i
                                         class="fab fa-instagram has-text-danger-dark"></i> Instagram</a></li>
                         </ul>
                     </div>
                 </div>
+
+
+                <!-- column3 -->
                 <div class="column is-one-third ">
                     <div class="container has-text-danger-dark">
                         <ul>
-                            <li><a class="has-text-black has-text-weight-semibold"> Contact</a> </li>
+                            <li><a href="https://github.com/dinozio-design/CRM-lite"
+                                    class="has-text-black has-text-weight-semibold"> Contact</a> </li>
                             <li><a href="./Under Construction/underConstruction.html"
                                     class="has-text-black has-text-weight-semibold"> Privacy</a></li>
                             <li><a href="./Under Construction/underConstruction.html"
@@ -245,31 +257,35 @@
                         </ul>
                     </div>
                 </div>
-                <div class="space"></div>
             </div>
         </div>
     </div>
 
-    <footer class="has-background-dark has-text-centered has-text-white py-6">
-        <p> © Copyright 2023, CRMLite-Green grass Lawn care services Corporation</p>
+    <div class="space"></div>
+
+    <!-- footer section -->
+    <footer class="hero-foot has-background-dark has-text-centered has-text-white py-6">
+        <p> © Copyright 2023, CRM Lite-Green grass Lawn care services Corporation</p>
     </footer>
-    <!-- This is the script to show and hide the modal -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const modal = document.querySelector('.modal');
-            const modalClose = modal.querySelector('.delete');
-            const submitButton = document.querySelector('form button[type="submit"]');
 
-            submitButton.addEventListener('click', (event) => {
-                event.preventDefault();
-                modal.classList.add('is-active');
-            });
+</body>
+<!-- This is the script to show and hide the modal -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.querySelector('.modal');
+        const modalClose = modal.querySelector('.delete');
+        const submitButton = document.querySelector('form button[type="submit"]');
 
-            modalClose.addEventListener('click', () => {
-                modal.classList.remove('is-active');
-            });
+        submitButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            modal.classList.add('is-active');
         });
-    </script>
+
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('is-active');
+        });
+    });
+</script>
 </body>
 
 </html>
