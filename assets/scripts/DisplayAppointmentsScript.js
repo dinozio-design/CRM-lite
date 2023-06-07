@@ -66,7 +66,8 @@ function init() {
             "address": "97918 Melody Drive",
             "city": "Aylmer", "prov": "Ontario",
             "postalZip": "N5H",
-            "date": "2023-07-01"
+            "date": "2023-07-01",
+            "time": "5:09"
         },
         {
             "id": 7,
@@ -77,7 +78,8 @@ function init() {
             "city": "Orillia",
             "prov": "Ontario",
             "postalZip": "L3V",
-            "date": "2023-08-07"
+            "date": "2023-08-07",
+            "time": "5:09"
         },
         {
             "id": 12,
@@ -88,7 +90,8 @@ function init() {
             "city": "Concord",
             "prov": "Ontario",
             "postalZip": "L4K",
-            "date": "2023-09-29"
+            "date": "2023-12-31",
+            "time": "5:09"
         },
         {
             "id": 13,
@@ -99,7 +102,8 @@ function init() {
             "city": "Espanola",
             "prov": "Ontario",
             "postalZip": "P5E",
-            "date": "2024-01-01"
+            "date": "2024-01-01",
+            "time": "5:09"
         },
 
     ];
