@@ -71,13 +71,13 @@
     </section>
 
     <!-- This is the right hand side box, that will have the form elements -->
-    <form class="box column is-two-quarters mx-2">
+    <form id="userForm" class="box column is-two-quarters mx-2">
         <!-- This is the form element for full name -->
         <!-- Want to add a function in which the check icon turns green when a value is inputted -->
         <div class="field">
             <label class="label is-underlined">Full Name</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="Full Name">
+                <input class="input is-success" type="text" id="fullName" placeholder="Full Name">
                 <span class="icon is-small is-left">
                     <i class="fa fa-user"></i>
                 </span>
@@ -132,7 +132,7 @@
                 <div class="field">
                     <label class="label is-underlined">City</label>
                     <div class="control has-icons-left has-icons-right">
-                        <input class="input is-danger" type="text" id="city-Name" placeholder="E.g Toronto">
+                        <input class="input is-danger" type="text" id="cityNameSearch" placeholder="E.g Toronto" name="cityNameSearch">
                         <span class="icon is-small is-left">
                             <i class="fa fa-map-pin"></i>
                         </span>
@@ -161,7 +161,7 @@
                         <div class="field">
                             <label class="label is-underlined">Appointment Date</label>
                             <div class="control">
-                                <input class="input is-link is-danger" id="Date-of-Appointment" type="date">
+                                <input name ="dateOfAppointment" class="input is-link is-danger" id="dateOfAppointment" type="date">
                                 <p class="help is-danger">This is a required!</p>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
                         <div class="field">
                             <label class="label is-underlined">Appointment Time</label>
                             <div class="control">
-                                <input class="input is-link" type="time">
+                                <input class="input is-link" id="timeOfAppointment" type="time">
                             </div>
                         </div>
 
@@ -215,7 +215,7 @@
     </div>
 
     <div class="space"></div>
-    <div class="hero body" >
+    <div class="hero body">
         <div class="container">
             <div class="columns is-vcentered">
                 <!-- column1 -->
@@ -272,7 +272,7 @@
 
 </body>
 <!-- This is the script to show and hide the modal -->
-<script>
+<!-- <script>
     document.addEventListener('DOMContentLoaded', () => {
         const modal = document.querySelector('.modal');
         const modalClose = modal.querySelector('.delete');
@@ -287,7 +287,7 @@
             modal.classList.remove('is-active');
         });
     });
-</script>
+</script> -->
 </body>
 
 </html>
