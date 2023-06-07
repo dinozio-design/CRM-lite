@@ -11,32 +11,20 @@ var apptAddress = $('#address');
 
 function submitHandler(event) {
     event.preventDefault();
-    console.log(this.dateOfAppointment.value);
-    console.log("i am called");
-    var id = this.pHone.value+"_"+this.cityNameSearch.value.trim();
-    var fullName = this.fullName.value;
-    var email = this.eMail.value;
-    var phone = this.pHone.value
-    var address = this.address.value.trim();
-    var city = this.cityNameSearch.value.trim();
-    var prov = "";
-    var postalZip = this.postalCode.value;
-    var date = this.dateOfAppointment.value;
-    var time = this.timeOfAppointment.value;
-
-
-    console.log(fullName, email, phone, address, city, prov, postalZip, date, time);
+//  create new user info object
+    var newObjToStore = {
+        "id": this.pHone.value + "_" + this.cityNameSearch.value.trim(),
+        "fullName": this.fullName.value,
+        "email": this.eMail.value,
+        "phone": this.pHone.value,
+        "address": this.address.value.trim(),
+        "city": this.cityNameSearch.value.trim(),
+        "prov": "Ontario",
+        "postalZip": this.postalCode.value,
+        "date": this.dateOfAppointment.value,
+        "time": this.timeOfAppointment.value
+    };
+    console.log(newObjToStore);
+    // pass it on to save to storage function
 }
 userFormEl.on('submit', submitHandler);
-
-
-// "id": 1,
-//             "fullName": "Lowell Bowland",
-//             "email": "lbowland0@t.co",
-//             "phone": "593-913-2017",
-//             "address": "8859 3rd Court",
-//             "city": "Greater Napanee",
-//             "prov": "Ontario",
-//             "postalZip": "K7R",
-//             "date": "2023-06-08",
-//             "time": "10:28"
