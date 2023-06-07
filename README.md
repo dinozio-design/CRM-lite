@@ -50,7 +50,7 @@ THEN I will directed to Contact Information
 
 The following animation shows the web application's appearance and functionality:
 
-<img src="mockup.png" alt="mockup-img">
+![CRM Lite - image of first page](./assets/images/mock-up.PNG)
 
 
 ## Our Work
