@@ -64,3 +64,15 @@
 #appoint{
     background-color: gainsboro;
 }
+
+.cancel{
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    left: 84.9rem;
+    bottom: 3.3rem;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
